@@ -25,7 +25,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={pythonSkill} width="50" height="50" />
+                        <img src={pythonSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> Python</p>
                     <p class="proficiency">Proficiency: Expert</p>
@@ -35,7 +35,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={reactSkill} width="50" height="50" />
+                        <img class="" src={reactSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill">React</p>
                     <p class="proficiency">Proficiency: Advanced</p>
@@ -45,7 +45,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={jsSkill} width="50" height="50" />
+                        <img class="" src={jsSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> JavaScript</p>
                     <p class="proficiency">Proficiency: Advanced</p>
@@ -55,7 +55,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={htmlSkill} width="50" height="50" />
+                        <img class="" src={htmlSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> HTML</p>
                     <p class="proficiency">Proficiency: Intermediate</p>
@@ -65,7 +65,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={javaSkill} width="50" height="50" />
+                        <img class="" src={javaSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> Java</p>
                     <p class="proficiency">Proficiency: Intermediate </p>
@@ -75,7 +75,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={cppSkill} width="50" height="50" />
+                        <img class="" src={cppSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> C++</p>
                     <p class="proficiency">Proficiency: Intermediate</p>
@@ -85,7 +85,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={cSkill} width="50" height="50" />
+                        <img class="" src={cSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> C</p>
                     <p class="proficiency">Proficiency: Intermediate</p>
@@ -95,7 +95,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={cssSkill} width="50" height="50" />
+                        <img class="" src={cssSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> CSS</p>
                     <p class="proficiency">Proficiency: Intermediate</p>
@@ -105,7 +105,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={sqlSkill} width="50" height="50" />
+                        <img class="" src={sqlSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> SQL</p>
                     <p class="proficiency">Proficiency: Intermediate</p>
@@ -115,7 +115,7 @@ const Skills = () => {
             <div class="skillBlock">
                 <div class="skill">
                     <div class="imgSkill">
-                        <img class="img-fluid" src={mongodbSkill} width="50" height="50" />
+                        <img class="" src={mongodbSkill} width="50" height="50" />
                     </div>
                     <p class="titleSkill"> MongoDB</p>
                     <p class="proficiency">Proficiency: Novice</p>

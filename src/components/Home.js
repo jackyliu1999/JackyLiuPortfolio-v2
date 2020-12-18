@@ -78,7 +78,7 @@ const Home = () => {
     const handleshow10Close = () => setshow10(false);
     const handleshow10Show = () => setshow10(true);
     return (
-        <div className='projects'>
+        <div id='homeAll' class="homeAll">
             <section id="projects" class="projects">
                 <section id="headSection" class="d-flex align-items-center justify-content-center">
                     <div class="container" data-aos="fade-up">
@@ -161,7 +161,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <br /><br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                         <div class="col-lg-4 col-md-6">
                             <div class="title">
                                 <div class="pic"><img src={LoLProfileCustomizer} class="img-fluid" alt="" onClick={handleshow10Show} /></div>

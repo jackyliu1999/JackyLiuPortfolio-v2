@@ -465,11 +465,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* projects */
-.projects {
-  background: url("./components/images/background1.jpg") center center no-repeat;
+.homeAll {
+  background-image: url("./components/images/background1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px 0;
-  position: relative;
 }
 
 .projects::before {
@@ -623,7 +624,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home {
-  background: rgba(0, 0, 0);
+
   background-size: cover;
   padding: 40px 0;
   position: relative;

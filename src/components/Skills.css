@@ -1,16 +1,6 @@
-.img-fluid {
-    transform-origin: 0% 0%;
-    transition: transform 0s, filter 0s ease-in-out;
-  }
-  
-  .img-fluid:hover{
-    transform: scale(1);
-  }
-
-
-  .home .title .info {
+.home .title .info {
     position: absolute;
-    bottom: -70px;
+    bottom: -95px;
     left: 20px;
     right: 20px;
     background: #fff;

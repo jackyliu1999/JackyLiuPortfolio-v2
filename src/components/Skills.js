@@ -7,6 +7,8 @@ import cppSkill from './images/cppSkill.png'
 import cSkill from './images/cSkill.png'
 import cssSkill from './images/cssSkill.png'
 import sqlSkill from './images/sqlSkill.png'
+import reactSkill from './images/reactSkill.png'
+import mongodbSkill from './images/mongodbSkill.png'
 import './Skills.css';
 
 const Skills = () => {
@@ -14,89 +16,112 @@ const Skills = () => {
         <div className="skills">
             <section id="projects" class="home">
                 <div class="container">
-                    <br/><br/><br/>
+                    <br /><br /><br />
                     <div class="section-title">
                         <h2 style={{ color: "white", textAlign: "center" }}> <b>S<u style={{ textDecorationColor: "#ffc451" }}>KILL</u>S</b></h2>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={pythonSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>PYTHON</h4>
-                                    <span>ADVANCED</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={htmlSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>HTML</h4>
-                                    <span>PROFICIENT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={javaSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>JAVA</h4>
-                                    <span>PROFICIENT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br /><br />
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={jsSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>JAVASCRIPT</h4>
-                                    <span>PROFICIENT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={cppSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>C++</h4>
-                                    <span>INTERMEDIATE</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={cSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>C</h4>
-                                    <span>INTERMEDIATE</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={cssSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>CSS</h4>
-                                    <span>INTERMEDIATE</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="title">
-                                <div class="pic"><img src={sqlSkill} class="img-fluid" alt="" /></div>
-                                <div class="info">
-                                    <h4>SQL</h4>
-                                    <span>INTERMEDIATE</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    </div>
                 </div>
             </section>
-            <br /><br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={pythonSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> Python</p>
+                    <p class="proficiency">Proficiency: Expert</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={reactSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill">React</p>
+                    <p class="proficiency">Proficiency: Advanced</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={jsSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> JavaScript</p>
+                    <p class="proficiency">Proficiency: Advanced</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={htmlSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> HTML</p>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={javaSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> Java</p>
+                    <p class="proficiency">Proficiency: Intermediate </p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={cppSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> C++</p>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={cSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> C</p>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={cssSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> CSS</p>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={sqlSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> SQL</p>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                </div>
+            </div>
+            <br />
+            <div class="skillBlock">
+                <div class="skill">
+                    <div class="imgSkill">
+                        <img class="img-fluid" src={mongodbSkill} width="50" height="50" />
+                    </div>
+                    <p class="titleSkill"> MongoDB</p>
+                    <p class="proficiency">Proficiency: Novice</p>
+                </div>
+            </div>
+            <br/><br/>
         </div>
     )
 }

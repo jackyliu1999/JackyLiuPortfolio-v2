@@ -171,7 +171,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <br /><br /><br /><br /><br /><br />
+                        <br /><br /><br /><br />
                     </div>
 
 
@@ -203,7 +203,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <br /><br /><br />
+                    
                 </div>
             </section>
 

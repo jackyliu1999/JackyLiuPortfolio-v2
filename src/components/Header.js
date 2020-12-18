@@ -9,7 +9,7 @@ const Header = () => {
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
                             <li><a href="/Home">Home</a></li>
-                            <li><a href="#projs">Projects</a></li>
+                            <li><a href="/Home#projs">Projects</a></li>
                             <li><a href="Skills">Skills</a></li>
                             <li><a href="Archives">Archives</a></li>
                             <li><a href="Resume">Resume</a></li>

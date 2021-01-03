@@ -4,12 +4,9 @@ import devpostLogo from "./images/devpost.png"
 import linkedInLogo from "./images/linkedin.png"
 import projectsIcon from "./images/projectsIcon.png"
 import musicCatalyst from './images/musicCatalyst.png'
-import chatJS from './images/ChatJS.png'
 import RuneterraBot from './images/RuneterraBot.png'
 import Decoy from './images/Decoy.jpg'
 import Chowdown from './images/Chowdown.png'
-import GitLogo from './images/gitLogo.png'
-import infoIcon from './images/infoIcon.png'
 import ChowDownDemo2 from './images/Chowdown2.png'
 import ChowDownDemo3 from './images/Chowdown3.jpg'
 import ChowDownDemo4 from './images/Chowdown4.jpg'
@@ -32,6 +29,7 @@ import BitcoinPrice2 from './images/BitcoinPrice2.PNG'
 import LoLProfileCustomizer from './images/LoLProfileCustomizer.png'
 import resumeIcon from './images/resumeIcon.png'
 import { Modal, Button } from 'react-bootstrap';
+import MyMovieCatalog from './images/MyMovieCatalog.png'
 
 const Home = () => {
     const [show, setShow] = React.useState(false);
@@ -70,13 +68,13 @@ const Home = () => {
     const handleshow8Close = () => setshow8(false);
     const handleshow8Show = () => setshow8(true);
 
-    const [show9, setshow9] = React.useState(false);
-    const handleshow9Close = () => setshow9(false);
-    const handleshow9Show = () => setshow9(true);
-
     const [show10, setshow10] = React.useState(false);
     const handleshow10Close = () => setshow10(false);
     const handleshow10Show = () => setshow10(true);
+
+    const [show11, setshow11] = React.useState(false);
+    const handleshow11Close = () => setshow11(false);
+    const handleshow11Show = () => setshow11(true);
     return (
         <div id='homeAll' class="homeAll">
             <section id="projects" class="projects">
@@ -136,19 +134,19 @@ const Home = () => {
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="title">
-                                <div class="pic"><img src={musicCatalyst} class="img-fluid" alt="" onClick={handleshow5Show} /></div>
+                                <div class="pic"><img src={MyMovieCatalog} class="img-fluid" alt="" onClick={handleshow11Show} /></div>
                                 <div class="info">
-                                    <h4><a href="https://github.com/jackyliu1999/Music-Catalyst">Music Catalyst</a></h4>
+                                    <h4><a href="https://github.com/jackyliu1999/MyMovieCatalog">MyMovieCatalog</a></h4>
                                     <span>JavaScript, React, SQL</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="title">
-                                <div class="pic"><img src={chatJS} class="img-fluid" alt="" onClick={handleshow9Show} /></div>
+                                <div class="pic"><img src={musicCatalyst} class="img-fluid" alt="" onClick={handleshow5Show} /></div>
                                 <div class="info">
-                                    <h4><a href="https://github.com/jackyliu1999/ChatJS">ChatJS</a></h4>
-                                    <span>JavaScript, React, SQL, socket.io</span>
+                                    <h4><a href="https://github.com/jackyliu1999/Music-Catalyst">Music Catalyst</a></h4>
+                                    <span>JavaScript, React, SQL</span>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +172,7 @@ const Home = () => {
                         <br /><br /><br /><br />
                     </div>
 
-
+                    <br /><br />
                     <div class="section-title">
                         <h2 style={{ color: "white", textAlign: "center" }}> <b>HA<u style={{ textDecorationColor: "#ffc451" }}>CKATHO</u>NS</b></h2>
                     </div>
@@ -203,7 +201,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -432,45 +430,6 @@ const Home = () => {
                 </Modal.Footer>
             </Modal>
 
-            <Modal size="lg" show={show9} onHide={handleshow9Close}>
-                <Modal.Header closeButton>
-                    <Modal.Title>ChatJS</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <b>GitHub: <a href="https://github.com/jackyliu1999/ChatJS" >github.com/jackyliu1999/ChatJS</a></b><br />
-                    <b>Video Demo: </b><br />
-                    <center><iframe width="700" height="500"
-                        src="https://www.youtube.com/embed/26YkidHsaPo">
-                    </iframe></center>
-                    <b>Frontend Dependencies: </b><br />
-                    <li>mobx</li>
-                    <li>mobx-react</li>
-                    <li>query-string</li>
-                    <li>react-emoji</li>
-                    <li>react-router-dom</li>
-                    <li>react-scroll-to-bottom</li>
-                    <li>socket.io-client</li>
-                    <b>Backend Login/Registration Server Dependencies: </b><br />
-                    <li>bcrypt</li>
-                    <li>express</li>
-                    <li>express-mysql-session</li>
-                    <li>express-session</li>
-                    <li>mysql</li>
-                    <b>Backend Chat Server Dependencies: </b><br />
-                    <li>cors</li>
-                    <li>express</li>
-                    <li>nodemon</li>
-                    <li>socket.io</li>
-                    <b>How it was built: </b><br />
-          The Frontend was developed using ReactJS. The backend was developed in JavaScript and databases storing user information are managed via MySQL. The server is hosted locally using Apache. Passwords are encrypted using bcrypt to ensure the safety of users. The backend for the chat server featuring communication between users was implemented using Socket.IO and nodemon.
-        </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleshow9Close}>
-                        Close
-          </Button>
-                </Modal.Footer>
-            </Modal>
-
             <Modal size="lg" show={show10} onHide={handleshow10Close}>
                 <Modal.Header closeButton>
                     <Modal.Title>LoL Profile Customizer</Modal.Title>
@@ -493,6 +452,50 @@ const Home = () => {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleshow10Close}>
+                        Close
+          </Button>
+                </Modal.Footer>
+            </Modal>
+
+
+            <Modal size="lg" show={show11} onHide={handleshow11Close}>
+                <Modal.Header closeButton>
+                    <Modal.Title>MyMovieCatalog</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <b>GitHub Frontend: <a href="https://github.com/jackyliu1999/MyMovieCatalog" >github.com/jackyliu1999/MyMovieCatalog</a></b><br />
+                    <b>GitHub Backend: <a href="https://github.com/jackyliu1999/MyMovieCatalog-backend" >github.com/jackyliu1999/MyMovieCatalog-backend</a></b><br />
+                    <b>Video Demo: </b><br />
+                    <center><iframe width="700" height="500"
+                        src="https://www.youtube.com/embed/chwMsQyAs5Q">
+                    </iframe></center>
+                    <b>Frontend Dependencies: </b><br />
+                    <li>bootstrap</li>
+                    <li>mobx</li>
+                    <li>mobx-react</li>
+                    <li>react-bootstrap</li>
+                    <li>react-dom</li>
+                    <li>react-router-dom</li>
+                    <li>reactstrap</li>
+                    <li>web-vitals</li>
+                    <b>Backend Dependencies: </b><br />
+                    <li>bcrypt</li>
+                    <li>express</li>
+                    <li>express-mysql-session</li>
+                    <li>express-session</li>
+                    <li>mysql</li>
+                    <b>What it does and how it was built: </b><br />
+                    MyMovieCatalog is a web application that allows users to track which movies they have watched. The frontend was developed in ReactJS with it making backend calls to an SQL database storing user information and movie information. MyMovieCatalog allows users to add a movie to their watched list, remove a movie from their watched list, view the profiles of other users and search for movies using a keyword.
+          <br /><b>Functionalities: </b><br />
+                    <li>Login Server</li>
+                    <li>Registration Server</li>
+                    <li>Add to List</li>
+                    <li>Remove from List</li>
+                    <li>Search for Lists of other users</li>
+                    <li>Search for Movies</li>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleshow11Close}>
                         Close
           </Button>
                 </Modal.Footer>

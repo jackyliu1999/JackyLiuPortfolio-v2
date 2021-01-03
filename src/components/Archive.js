@@ -30,6 +30,10 @@ const Archive = () => {
     const handleshow8Close = () => setshow8(false);
     const handleshow8Show = () => setshow8(true);
 
+    const [show9, setshow9] = React.useState(false);
+    const handleshow9Close = () => setshow9(false);
+    const handleshow9Show = () => setshow9(true);
+
     return (
         <div className="archive">
             <br />
@@ -46,6 +50,14 @@ const Archive = () => {
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td >2020</td>
+                        <td >ChatJS</td>
+                        <td >JavaScript, React, SQL, socket.io</td>
+                        <td >Frontend and backend for a chatroom web application developed using React. Features a login and registration server. Incorporates Socket.IO in order to implement the functionality that allows communication between users.</td>
+                        <td ><a href="https://github.com/jackyliu1999/ChatJS"> <img src={GitLogo} alt="" /></a></td>
+                        <td><img src={infoIcon} onClick={handleshow9Show} alt="" /></td>
+                    </tr>
                     <tr>
                         <td >2020</td>
                         <td >COVID19 Stats Tracker</td>
@@ -187,6 +199,47 @@ const Archive = () => {
           </Button>
                 </Modal.Footer>
             </Modal>
+
+            <Modal size="lg" show={show9} onHide={handleshow9Close}>
+                <Modal.Header closeButton>
+                    <Modal.Title>ChatJS</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <b>GitHub: <a href="https://github.com/jackyliu1999/ChatJS" >github.com/jackyliu1999/ChatJS</a></b><br />
+                    <b>Video Demo: </b><br />
+                    <center><iframe width="700" height="500"
+                        src="https://www.youtube.com/embed/26YkidHsaPo">
+                    </iframe></center>
+                    <b>Frontend Dependencies: </b><br />
+                    <li>mobx</li>
+                    <li>mobx-react</li>
+                    <li>query-string</li>
+                    <li>react-emoji</li>
+                    <li>react-router-dom</li>
+                    <li>react-scroll-to-bottom</li>
+                    <li>socket.io-client</li>
+                    <b>Backend Login/Registration Server Dependencies: </b><br />
+                    <li>bcrypt</li>
+                    <li>express</li>
+                    <li>express-mysql-session</li>
+                    <li>express-session</li>
+                    <li>mysql</li>
+                    <b>Backend Chat Server Dependencies: </b><br />
+                    <li>cors</li>
+                    <li>express</li>
+                    <li>nodemon</li>
+                    <li>socket.io</li>
+                    <b>How it was built: </b><br />
+          The Frontend was developed using ReactJS. The backend was developed in JavaScript and databases storing user information are managed via MySQL. The server is hosted locally using Apache. Passwords are encrypted using bcrypt to ensure the safety of users. The backend for the chat server featuring communication between users was implemented using Socket.IO and nodemon.
+        </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleshow9Close}>
+                        Close
+          </Button>
+                </Modal.Footer>
+            </Modal>
+
+
         </div>
     )
 }

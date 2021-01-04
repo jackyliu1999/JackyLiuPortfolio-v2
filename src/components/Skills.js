@@ -15,8 +15,9 @@ import { Nav, Button, Navbar, Form, FormControl, Card, Container, Row, Col } fro
 const Skills = () => {
     return (
         <div className="skillsBG">
+            <br/><br/>
             <div className="skills">
-                <section id="projects" class="home">
+                <section id="projects">
                     <div class="container">
                         <br /><br /><br />
                         <div class="section-title">

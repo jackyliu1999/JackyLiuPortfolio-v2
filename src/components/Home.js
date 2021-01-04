@@ -30,7 +30,9 @@ import LoLProfileCustomizer from './images/LoLProfileCustomizer.png'
 import resumeIcon from './images/resumeIcon.png'
 import { Modal, Button } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
-import { Nav, Navbar, Form, FormControl, Card, Container, Row, Col } from 'react-bootstrap'
+import { Nav, Navbar, Form, FormControl, Card, Container, Row, Col, Table } from 'react-bootstrap'
+import infoIcon from './images/infoIcon.png'
+import GitLogo from './images/gitLogo.png'
 
 const Home = () => {
     const [show, setShow] = React.useState(false);
@@ -134,103 +136,230 @@ const Home = () => {
                         <div class="section-title">
                             <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>PR<u style={{ textDecorationColor: "#64ffda" }}>OJEC</u>TS</b></h2>
                         </div>
-                        <br/>
+                        <br />
                         <Container style={{ margin: "auto" }}>
                             <Row>
-                                <Col style={{ paddingRight: "0px" }}>
-                                    <Card style={{ width: '22rem' }}>
-                                        <Card.Img variant="top" src={MyMovieCatalog} onClick={handleshow11Show} />
-                                        <Card.Body>
-                                            <Card.Title><a style={{ color: "black" }} href="https://github.com/jackyliu1999/MyMovieCatalog">MyMovieCatalog </a></Card.Title>
-                                            <div style={{ color: "#24B67E" }}><b>JavaScript, React, SQL</b></div>
-                                            <Card.Text>
-                                                Web application that allows users to track which movies they have watched, featuring a login and registration server.</Card.Text>
-                                            
-                                        </Card.Body>
-                                    </Card>
+                                <Col>
+                                    <img class="imageProjects" src={MyMovieCatalog} onClick={handleshow11Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>MyMovieCatalog</div>
                                     <br />
-                                </Col>
-                                <Col style={{ paddingRight: "0px" }}>
-                                    <Card style={{ width: '22rem' }}>
-                                        <Card.Img variant="top" src={musicCatalyst} onClick={handleshow5Show} />
-                                        <Card.Body>
-                                            <Card.Title><a style={{ color: "black" }} href="https://github.com/jackyliu1999/Music-Catalyst">Music Catalyst</a></Card.Title>
-                                            <div style={{ color: "#24B67E" }}><b>JavaScript, React, SQL</b></div>
-                                            <Card.Text>
-                                                Web application that allows user to save their favorite songs to a playlist, featuring a login and registation server.</Card.Text>
-                                            
-                                        </Card.Body>
-                                    </Card>
+                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                        Web application that allows users to track which movies they have watched, featuring a login and registration server.
+                            </div>
                                     <br />
-                                </Col>
-                                <Col style={{ paddingRight: "0px" }}>
-                                    <Card style={{ width: '22rem' }}>
-                                        <Card.Img variant="top" src={RuneterraBot} onClick={handleshow4Show} />
-                                        <Card.Body>
-                                            <Card.Title><a style={{ color: "black" }} href="https://github.com/jackyliu1999/Runeterra-Bot">Runeterra Bot</a></Card.Title>
-                                            <div style={{ color: "#24B67E" }}><b>Java, JDA</b></div>
-                                            <Card.Text>
-                                                Discord Bot that allows League of Legends players to look up live game stats, ranked information and summoner information.</Card.Text>
-                                            
-                                        </Card.Body>
-                                    </Card>
                                     <br />
+                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>JavaScript, React, SQL</div>
+                                    <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                             </Row>
-                            <Row>
-                                <Col style={{ paddingRight: "0px" }}>
-                                    <Card style={{ width: '22rem' }}>
-                                        <Card.Img variant="top" src={LoLProfileCustomizer} onClick={handleshow10Show} />
-                                        <Card.Body>
-                                            <Card.Title><a style={{ color: "black" }} href="https://github.com/jackyliu1999/LoLProfileCustomizer">LoL Profile Customizer</a></Card.Title>
-                                            <div style={{ color: "#24B67E" }}><b>Python</b></div>
-                                            <Card.Text>
-                                                Discord Bot that allows players to look up live game stats, ranked information and summoner information for world-renowned MOBA League of Legends. </Card.Text>
-                                            
-                                        </Card.Body>
-                                    </Card>
+                            <Row style={{ marginTop: "50px" }}>
+                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Music Catalyst</div>
                                     <br />
+                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                        Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server.
+                            </div>
+                                    <br /><br />
+                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>JavaScript, React, SQL</div>
+                                    <a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
+                                <Col>
+                                    <img class="imageProjects" src={musicCatalyst} onClick={handleshow5Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                            </Row>
+                            <Row style={{ marginTop: "50px" }}>
+                                <Col>
+                                    <img class="imageProjects" src={RuneterraBot} onClick={handleshow4Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Runeterra Bot</div>
+                                    <br />
+                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                        Discord Bot that allows League of Legends players to look up live game stats, ranked information and summoner information.
+                            </div>
+                                    <br />
+                                    <br />
+                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>Java, JDA</div>
+                                    <a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow4Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
+                                </Col>
+                            </Row>
+                            <Row style={{ marginTop: "50px" }}>
+                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>LoL Profile Customizer</div>
+                                    <br />
+                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                        Allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.
+                            </div>
+                                    <br /><br />
+                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>Python</div>
+                                    <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
+                                </Col>
+                                <Col>
+                                    <img class="imageProjects" src={LoLProfileCustomizer} onClick={handleshow10Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
                             </Row>
                         </Container>
 
-                        <div class="section-title">
+                        <div class="section-title" style={{ marginTop: "50px" }}>
                             <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>HA<u style={{ textDecorationColor: "#64ffda" }}>CKATHO</u>NS</b></h2>
                         </div>
-                        <br/>
+                        <br />
                         <Container style={{ margin: "auto" }}>
                             <Row>
-                                <Col style={{ paddingRight: "0px" }}>
-                                    <Card style={{ width: '22rem' }}>
-                                        <Card.Img variant="top" src={Decoy} onClick={handleshow1Show} />
-                                        <Card.Body>
-                                            <Card.Title><a style={{ color: "black" }} href="https://devpost.com/software/decoy">Decoy</a><br /><div style={{ fontSize: "15px" }}><a style={{ color: "black" }} href="https://hackforthepeople.devpost.com/">Hack for the People - Winner</a></div></Card.Title>
-                                            <div style={{ color: "#24B67E" }}><b>Python</b></div>
-                                            <Card.Text>
-                                                A Python-based application that mitigates damages caused by physical computer theft by detecting and tracking unauthorized users. </Card.Text>
-                                            
-                                        </Card.Body>
-                                    </Card>
+                                <Col>
+                                    <img class="imageProjects" src={Decoy} onClick={handleshow1Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Decoy</div>
                                     <br />
-                                </Col>
-                                <Col style={{ paddingRight: "0px" }}>
-                                    <Card style={{ width: '22rem' }}>
-                                        <Card.Img variant="top" src={Chowdown} onClick={handleShow} />
-                                        <Card.Body>
-                                            <Card.Title><a style={{ color: "black" }} href="https://devpost.com/software/chowdown">ChowDown!</a><br /><div style={{ fontSize: "15px" }}><a style={{ color: "black" }} href="https://hackwestern6.devpost.com/">Hack Western 6</a></div></Card.Title>
-                                            <div style={{ color: "#24B67E" }}><b>Python</b></div>
-                                            <Card.Text>
-                                                A full stack mobile application that assist users in searching for recipes and restaurant locations. <br /><br /> </Card.Text>
-                                            
-                                        </Card.Body>
-                                    </Card>
+                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                        A Python-based application that mitigates damages caused by physical computer theft by detecting and tracking unauthorized users.
+                            </div>
                                     <br />
+                                    <br />
+                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>Python</div>
+                                    <a href="https://devpost.com/software/decoy" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
-                                <Col></Col>
+                            </Row>
+                            <Row style={{ marginTop: "50px" }}>
+                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>ChowDown!</div>
+                                    <br />
+                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                        A full stack mobile application that assist users in recognizing food based on images, searching for recipes and locating nearby restaurant.
+                            </div>
+                                    <br /><br />
+                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>JavaScript, React-Native, Python</div>
+                                    <a href="https://devpost.com/software/chowdown" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
+                                </Col>
+                                <Col>
+                                    <img class="imageProjects" src={Chowdown} onClick={handleShow} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
                             </Row>
                         </Container>
                     </div>
+                    <div id="skills">&nbsp;</div>
                 </section>
+                <div className="" style={{ marginTop: "50px" }}>
+                    <div className="skills">
+                        <section id="projects">
+                            <div class="container">
+                                <div class="section-title">
+                                    <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>S<u style={{ textDecorationColor: "#64ffda" }}>KILL</u>S</b></h2>
+                                </div>
+                            </div>
+                        </section>
+
+                        <Table borderless>
+                            <thead>
+                                <tr>
+                                    <th scope="col" width="220">Programming Languages</th>
+                                    <th scope="col" width="220">Frameworks</th>
+                                    <th scope="col" width="220">Libraries</th>
+                                    <th scope="col" width="220">Database Tools</th>
+                                    <th scope="col" width="220">IDEs</th>
+                                    <th scope="col" width="220">Software</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>React</td>
+                                    <td>NumPy</td>
+                                    <td>MySQL</td>
+                                    <td>Eclipse</td>
+                                    <td>Microsoft Excel</td>
+                                </tr>
+                                <tr>
+                                    <td >JavaScript</td>
+                                    <td>React Native</td>
+                                    <td>Selenium</td>
+                                    <td>XAMPP</td>
+                                    <td>PyCharm</td>
+                                    <td>Microsoft PowerPoint</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML</td>
+                                    <td>Flask</td>
+                                    <td>OpenPyXL</td>
+                                    <td>MongoDB</td>
+                                    <td>Android Studio</td>
+                                    <td>Microsoft Word</td>
+                                </tr>
+                                <tr>
+                                    <td >Java</td>
+                                    <td>Bootstrap</td>
+                                    <td>PIL</td>
+                                    <td>MongoDB Compass</td>
+                                    <td>Visual Studio Code</td>
+                                    <td>Adobe Photoshop</td>
+                                </tr>
+                                <tr>
+                                    <td >C++</td>
+                                    <td></td>
+                                    <td>Tkinter</td>
+                                    <td>phpMyAdmin</td>
+                                    <td>Code::Blocks</td>
+                                    <td>Camtasia Studio</td>
+                                </tr>
+                                <tr>
+                                    <td >C</td>
+                                    <td></td>
+                                    <td>pynput</td>
+                                    <td></td>
+                                    <td>Android Studio</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td >C#</td>
+                                    <td></td>
+                                    <td>pyttsx3</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td >CSS</td>
+                                    <td></td>
+                                    <td>requests</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td></td>
+                                    <td>express</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td></td>
+                                    <td>Axios</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td></td>
+                                    <td>bcrypt</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td></td>
+                                    <td>JDA</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </Table>
+
+                    </div>
+                    <br />
+                </div>
 
                 <Modal size="lg" show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
@@ -246,7 +375,7 @@ const Home = () => {
         The user is allowed to take a picture of a complete dish or specify a list of basics ingredients. Alternatively, a user may also input a keyword. Utilizing machine learning using Convolutional Neural Network, the program will first identify the picture sent. For complete dishes, the program will display local restaurants that serve the item, or recipes to make the dish. On the other hand for ingredients, the program will analyze what ingredients you have, and return a recipe which caters best to what is available in your kitchen.
         <img class="img-fluid" src={ChowDownDemo3} alt="" />
                         <img class="img-fluid" src={ChowDownDemo4} alt="" />
-                        <img class="img-fluid" src={ChowDownDemo5} alt="" /> 
+                        <img class="img-fluid" src={ChowDownDemo5} alt="" />
                         <br /> <b>How it was built:</b><br />
         As a team, we decided to create an iOS and cross platform Android mainly via react-native. API calls were made using the google-places API for restaurant locations, and the Spoonacular API for recipes based on either dishes or given ingredients.
         <img class="img-fluid" src={ChowDownDemo2} alt="" />

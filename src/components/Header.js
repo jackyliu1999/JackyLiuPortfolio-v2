@@ -15,7 +15,7 @@ const Header = () => {
                             <div class="nav-menu">
                                 <Navbar.Text size="lg" style={{ paddingRight: "10px" }}><a href="/Home" style={{ color: "#e6f1ff" }}>Home</a></Navbar.Text>
                                 <Navbar.Text style={{ paddingRight: "10px" }}><a href="/Home#projs" style={{ color: "#e6f1ff" }}>Projects</a></Navbar.Text>
-                                <Navbar.Text style={{ paddingRight: "10px" }}><a href="Skills" style={{ color: "#e6f1ff" }}>Skills</a></Navbar.Text>
+                                <Navbar.Text style={{ paddingRight: "10px" }}><a href="/Home#skills" style={{ color: "#e6f1ff" }}>Skills</a></Navbar.Text>
                                 <Navbar.Text style={{ paddingRight: "10px" }}><a href="Archives" style={{ color: "#e6f1ff" }}>Archives</a></Navbar.Text>
                                 <Navbar.Text style={{ paddingRight: "10px" }}><a href="Resume" style={{ color: "#e6f1ff" }}>Resume</a></Navbar.Text>
                             </div>

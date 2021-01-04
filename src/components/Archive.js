@@ -38,6 +38,7 @@ const Archive = () => {
         <div className="archive">
             <br />
             <br />
+            <br />
             <table>
                 <thead>
                     <tr>

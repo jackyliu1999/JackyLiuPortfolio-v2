@@ -727,10 +727,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.skillsBG
+{
+  background-color: black;
+  height: 100vh
+}
 
 .skills{
   background-color: black;
-  height: 100vh
+  height: auto
 }
 
 .circled {

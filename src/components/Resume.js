@@ -7,7 +7,7 @@ const Resume = () => {
             <br />
             <br />
             <div className='resume'>
-                <br />
+                <br /><br />
                 <h2 id="resume" style={{ textAlign: "center" }}><b>Resume</b></h2>
                 <section id="resume" class="resume">
                     <div class="container">
@@ -79,7 +79,6 @@ const Resume = () => {
                     </div>
                 </section>
             </div>
-            <br/><br/><br/><br/><br/><br/><br/>
         </div>
     )
 }

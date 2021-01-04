@@ -26,8 +26,8 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Col></Col>
                         <Col md="auto">
-                            <div class="nav-menu d-none d-lg-block">
-                                <Navbar.Text className="m-1"><a href="/Home">Home</a></Navbar.Text>
+                            <div class="nav-menu">
+                                <Navbar.Text className="m-1" size="lg"><a href="/Home">Home</a></Navbar.Text>
                                 <Navbar.Text className="m-1"><a href="/Home#projs">Projects</a></Navbar.Text>
                                 <Navbar.Text className="m-1"><a href="Skills">Skills</a></Navbar.Text>
                                 <Navbar.Text className="m-1"><a href="Archives">Archives</a></Navbar.Text>

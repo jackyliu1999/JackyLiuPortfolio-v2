@@ -102,7 +102,7 @@ const Archive = () => {
                         <Modal.Title>Notes to Text Converter</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/Notes-to-Text-Converter">github.com/jackyliu1999/Notes-to-Text-Converter</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Notes-to-Text-Converter">github.com/jackyliu1999/Notes-to-Text-Converter</a></b><br />
         Notes to Text Converter is a program that takes handwritten notes and converts them into text. The program aims to give students the option to be able to take handwritten notes in class and have the ability to transfer them to their computer at a later time. Notes to Text Converter
  incorporates optical character recognition tool, Python-tesseract also known as pytesseract for the conversion functionality. Tkinter was utilized in order to provide a user-friendly interface.
         <br /><b>Programming Languages:</b><br />
@@ -134,8 +134,8 @@ const Archive = () => {
                         <Modal.Title>COVID19 Stats Tracker - BOTHACKS</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker" >github.com/jackyliu1999/COVID19-Stats-Tracker</a></b><br />
-                        <b>Collaborated with:</b> <a href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a href="https://github.com/ansonwong250" >Anson Wong</a><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/COVID19-Stats-Tracker" >github.com/jackyliu1999/COVID19-Stats-Tracker</a></b><br />
+                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a style={{ color: "blue" }} href="https://github.com/ansonwong250" >Anson Wong</a><br />
                         <b>Inspiration:</b><br />
         COVID-19 is a worldwide pandemic that was first identified in late 2019 in Wuhan, China. As of August 2020, more than 20 million cases resulting in over 800,000 deaths have been documented worldwide. Information regarding the coronavirus is scattered and countless individuals have found it exceedingly difficult to scavenge for information while balancing their readjusted life due to the pandemic. COVID19 Stats Tracker acts as a haven of live information regarding the virus, incorporating various pandemic-related APIs as well as voice activated commands.
         <br /> <b>What it does:</b><br />
@@ -159,7 +159,7 @@ const Archive = () => {
                     <Modal.Header closeButton>
                         <Modal.Title>Desktop Cleaner</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body><b>GitHub: <a href="https://github.com/jackyliu1999/Desktop-Cleaner" >github.com/jackyliu1999/Desktop-Cleaner</a></b><br />
+                    <Modal.Body><b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Desktop-Cleaner" >github.com/jackyliu1999/Desktop-Cleaner</a></b><br />
                         <b>Functionality:</b><br />
         Desktop cleaner is a Python-based automation script that sorts folders based on file type (images, documents, spreadsheets, installers, music, videos) into a user inputted directory.
         <br /><b>Libraries Imported: </b><br />
@@ -184,7 +184,7 @@ const Archive = () => {
                     <Modal.Header closeButton>
                         <Modal.Title>Bitcoin Price Notifier</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body><b>GitHub: <a href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier" >github.com/jackyliu1999/Bitcoin-Price-Notifier</a></b><br />
+                    <Modal.Body><b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier" >github.com/jackyliu1999/Bitcoin-Price-Notifier</a></b><br />
                         <b>Functionality:</b><br />
         Notifies users of Bitcoin price fluctuation by extracting the live price of Bitcoin from Yahoo Finance. Allows users to set a benchmark and once the price hits the designated benchmark, verbally notifies user.
         <br /><b>Libraries Imported: </b><br />
@@ -208,7 +208,7 @@ const Archive = () => {
                         <Modal.Title>ChatJS</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/ChatJS" >github.com/jackyliu1999/ChatJS</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/ChatJS" >github.com/jackyliu1999/ChatJS</a></b><br />
                         <b>Video Demo: </b><br />
                         <center><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/26YkidHsaPo">

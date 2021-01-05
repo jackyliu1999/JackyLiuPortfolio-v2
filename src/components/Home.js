@@ -359,10 +359,10 @@ const Home = () => {
                                 </TabContent>
                             </CardBody>
                         </Card>
-                        <br/>
-                        <br/>
-                        <p style={{ color: "#e6f1ff", textAlign:"center" }}>© Copyright Jacky Liu. All Rights Reserved</p>
-                        <p style={{ color: "#e6f1ff", textAlign:"center" }}>Designed by Jacky Liu</p>
+                        <br />
+                        <br />
+                        <p style={{ color: "#e6f1ff", textAlign: "center" }}>© Copyright Jacky Liu. All Rights Reserved</p>
+                        <p style={{ color: "#e6f1ff", textAlign: "center" }}>Designed by Jacky Liu</p>
                     </div>
                     <br />
                 </div>
@@ -376,9 +376,9 @@ const Home = () => {
                         <Modal.Title>ChowDown! - Hack Western 6</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>Devpost: <a href="https://devpost.com/software/chowdown" >devpost.com/software/chowdown</a></b><br />
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/ChowDown" >github.com/jackyliu1999/ChowDown</a></b><br />
-                        <b>Collaborated with:</b> <a href="https://github.com/CyaTmrw" >Ivan Zhang</a>, <a href="https://www.linkedin.com/in/aja-khanal/">Aja Khanal</a><br />
+                        <b>Devpost: <a style={{ color: "blue" }} href="https://devpost.com/software/chowdown" >devpost.com/software/chowdown</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/ChowDown" >github.com/jackyliu1999/ChowDown</a></b><br />
+                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/CyaTmrw" >Ivan Zhang</a>, <a style={{ color: "blue" }} href="https://www.linkedin.com/in/aja-khanal/">Aja Khanal</a><br />
                         <b>Inspiration:</b><br />
         Food is an important part of our daily lives. With the assistance of machine learning, the ability to identify unknown foods through image recognition opens new doors for culinary enthusiasts who desire to seek out new local restaurants and recipes, expanding their world of food, one picture at a time.
         <br /> <b>What it does:</b><br />
@@ -402,9 +402,9 @@ const Home = () => {
                         <Modal.Title>Decoy - Hack for the People</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>Devpost: <a href="https://devpost.com/software/decoy" >devpost.com/software/decoy</a></b><br />
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/Decoy" >github.com/jackyliu1999/Decoy</a></b><br />
-                        <b>Collaborated with:</b> <a href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a href="https://github.com/ansonwong250" >Anson Wong</a><br />
+                        <b>Devpost: <a style={{ color: "blue" }} href="https://devpost.com/software/decoy" >devpost.com/software/decoy</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Decoy" >github.com/jackyliu1999/Decoy</a></b><br />
+                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a style={{ color: "blue" }} href="https://github.com/ansonwong250" >Anson Wong</a><br />
         Out of over 700 participants, won the category for “Best Digital Privacy Hack” during Hack for the People (August 2020). <br />
                         <b>Inspiration:</b><br />
         Theft is a large issue that plagues the economy. In a modernized society where technology is rapidly advancing, laptop theft is prominent now more than ever. Businesses and individuals alike use laptops on a daily basis, thus making them an easy target for criminals. Decoy aims to eliminate this by concealing itself as an everyday browser and fool criminals into revealing their location and face after they have stolen a laptop.
@@ -428,7 +428,7 @@ const Home = () => {
                         <Modal.Title>Notes to Text Converter</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/Notes-to-Text-Converter">github.com/jackyliu1999/Notes-to-Text-Converter</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Notes-to-Text-Converter">github.com/jackyliu1999/Notes-to-Text-Converter</a></b><br />
         Notes to Text Converter is a program that takes handwritten notes and converts them into text. The program aims to give students the option to be able to take handwritten notes in class and have the ability to transfer them to their computer at a later time. Notes to Text Converter
  incorporates optical character recognition tool, Python-tesseract also known as pytesseract for the conversion functionality. Tkinter was utilized in order to provide a user-friendly interface.
         <br /><b>Programming Languages:</b><br />
@@ -460,8 +460,8 @@ const Home = () => {
                         <Modal.Title>COVID19 Stats Tracker - BOTHACKS</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker" >github.com/jackyliu1999/COVID19-Stats-Tracker</a></b><br />
-                        <b>Collaborated with:</b> <a href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a href="https://github.com/ansonwong250" >Anson Wong</a><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/COVID19-Stats-Tracker" >github.com/jackyliu1999/COVID19-Stats-Tracker</a></b><br />
+                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a style={{ color: "blue" }} href="https://github.com/ansonwong250" >Anson Wong</a><br />
                         <b>Inspiration:</b><br />
         COVID-19 is a worldwide pandemic that was first identified in late 2019 in Wuhan, China. As of August 2020, more than 20 million cases resulting in over 800,000 deaths have been documented worldwide. Information regarding the coronavirus is scattered and countless individuals have found it exceedingly difficult to scavenge for information while balancing their readjusted life due to the pandemic. COVID19 Stats Tracker acts as a haven of live information regarding the virus, incorporating various pandemic-related APIs as well as voice activated commands.
         <br /> <b>What it does:</b><br />
@@ -486,7 +486,7 @@ const Home = () => {
                         <Modal.Title>Runeterra Bot</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/Runeterra-Bot" >github.com/jackyliu1999/Runeterra-Bot</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Runeterra-Bot" >github.com/jackyliu1999/Runeterra-Bot</a></b><br />
                         <b>Functionality and Inspiration:</b><br />
         League of Legends is a MOBA (multiplayer online battle arena) developed by Riot Games, initially released in October of 2009. Since then, League of Legends has become a worldwide phenomenon, gaining a following of millions. League of Legends has become a household name for many individuals in North America as video games have become more and more prevalent as technology is ingrained in our daily lives. Runeterra Bot integrates League of Legends with popular VoIP application, Discord. Runeterra Bot allows players to look up live game stats, other players and ranked stats while in the comfort of one’s own Discord server.
         <br /> <b>How it was built:</b><br />
@@ -517,7 +517,7 @@ const Home = () => {
                         <Modal.Title>Music Catalyst</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/Music-Catalyst" >github.com/jackyliu1999/Music-Catalyst</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Music-Catalyst" >github.com/jackyliu1999/Music-Catalyst</a></b><br />
                         <b>Video Demo: </b><br />
                         <center><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/zCJFEet8Yac">
@@ -550,7 +550,7 @@ const Home = () => {
                     <Modal.Header closeButton>
                         <Modal.Title>Desktop Cleaner</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body><b>GitHub: <a href="https://github.com/jackyliu1999/Desktop-Cleaner" >github.com/jackyliu1999/Desktop-Cleaner</a></b><br />
+                    <Modal.Body><b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Desktop-Cleaner" >github.com/jackyliu1999/Desktop-Cleaner</a></b><br />
                         <b>Functionality:</b><br />
         Desktop cleaner is a Python-based automation script that sorts folders based on file type (images, documents, spreadsheets, installers, music, videos) into a user inputted directory.
         <br /><b>Libraries Imported: </b><br />
@@ -575,7 +575,7 @@ const Home = () => {
                     <Modal.Header closeButton>
                         <Modal.Title>Bitcoin Price Notifier</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body><b>GitHub: <a href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier" >github.com/jackyliu1999/Bitcoin-Price-Notifier</a></b><br />
+                    <Modal.Body><b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier" >github.com/jackyliu1999/Bitcoin-Price-Notifier</a></b><br />
                         <b>Functionality:</b><br />
         Notifies users of Bitcoin price fluctuation by extracting the live price of Bitcoin from Yahoo Finance. Allows users to set a benchmark and once the price hits the designated benchmark, verbally notifies user.
         <br /><b>Libraries Imported: </b><br />
@@ -599,7 +599,7 @@ const Home = () => {
                         <Modal.Title>LoL Profile Customizer</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" >github.com/jackyliu1999/LoLProfileCustomizer</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/LoLProfileCustomizer" >github.com/jackyliu1999/LoLProfileCustomizer</a></b><br />
                         <b>Video Demo: </b><br />
                         <center><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/w17E0kt0C9g">
@@ -627,8 +627,8 @@ const Home = () => {
                         <Modal.Title>MyMovieCatalog</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub Frontend: <a href="https://github.com/jackyliu1999/MyMovieCatalog" >github.com/jackyliu1999/MyMovieCatalog</a></b><br />
-                        <b>GitHub Backend: <a href="https://github.com/jackyliu1999/MyMovieCatalog-backend" >github.com/jackyliu1999/MyMovieCatalog-backend</a></b><br />
+                        <b>GitHub Frontend: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/MyMovieCatalog" >github.com/jackyliu1999/MyMovieCatalog</a></b><br />
+                        <b>GitHub Backend: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/MyMovieCatalog-backend" >github.com/jackyliu1999/MyMovieCatalog-backend</a></b><br />
                         <b>Video Demo: </b><br />
                         <center><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/chwMsQyAs5Q">

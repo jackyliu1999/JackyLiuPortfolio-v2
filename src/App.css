@@ -735,27 +735,6 @@ h1, h2, h3, h4, h5, h6 {
   height: auto
 }
 
-.circled {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border-radius: 50%;
-  line-height: 1.55;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 0 0 4px #0a192f;
-  display: block;
-}
-
-.circled:hover {
-  background-color: #303C55;
-  color: #fff;
-  box-shadow: 0 0 0 3px #64ffda;
-  transition: all 500ms ease;
-}
-
-
-
 
 .nav-tabs {
   border: 0;
@@ -774,6 +753,7 @@ h1, h2, h3, h4, h5, h6 {
       border: 1px solid #191f31; }
     .nav-tabs > .nav-item > .nav-link.active {
       border: 1px solid #ffffff;
+      background-color:#e6f1ff;
       border-radius: 30px; }
     .nav-tabs > .nav-item > .nav-link i. {
       font-size: 14px;

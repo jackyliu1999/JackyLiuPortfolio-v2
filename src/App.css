@@ -753,3 +753,53 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 0 3px #64ffda;
   transition: all 500ms ease;
 }
+
+
+
+
+.nav-tabs {
+  border: 0;
+  padding: 0.5rem 0.7rem; }
+  .nav-tabs > .nav-item > .nav-link {
+    color: white;
+    margin: 0;
+    margin-right: 5px;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 11px 23px;
+    line-height: 1.5; }
+    .nav-tabs > .nav-item > .nav-link:hover {
+      background-color:#e6f1ff;
+      color:black;
+      border: 1px solid #191f31; }
+    .nav-tabs > .nav-item > .nav-link.active {
+      border: 1px solid #ffffff;
+      border-radius: 30px; }
+    .nav-tabs > .nav-item > .nav-link i. {
+      font-size: 14px;
+      position: relative;
+      top: -1px;
+      margin-right: 3px; }
+      .nav-tabs > .nav-item.disabled > .nav-link,
+      .nav-tabs > .nav-item.disabled > .nav-link:hover {
+        color: rgba(255, 255, 255, 0.5); }
+      .nav-tabs.nav-tabs-neutral > .nav-item > .nav-link {
+        color: #ffffff; }
+        .nav-tabs.nav-tabs-neutral > .nav-item > .nav-link.active {
+          border-color: rgba(255, 255, 255, 0.5);
+          color: #ffffff; }
+      .nav-tabs.nav-tabs-primary > .nav-item > .nav-link.active {
+        border-color: #e14eca;
+        color: #e14eca; }
+      .nav-tabs.nav-tabs-info > .nav-item > .nav-link.active {
+        border-color: #1d8cf8;
+        color: #1d8cf8; }
+      .nav-tabs.nav-tabs-danger > .nav-item > .nav-link.active {
+        border-color: #fd5d93;
+        color: #fd5d93; }
+      .nav-tabs.nav-tabs-warning > .nav-item > .nav-link.active {
+        border-color: #ff8d72;
+        color: #ff8d72; }
+      .nav-tabs.nav-tabs-success > .nav-item > .nav-link.active {
+        border-color: #00f2c3;
+        color: #00f2c3; }

@@ -30,11 +30,15 @@ import LoLProfileCustomizer from './images/LoLProfileCustomizer.png'
 import resumeIcon from './images/resumeIcon.png'
 import { Modal, Button } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
-import { Nav, Navbar, Form, FormControl, Card, Container, Row, Col, Table } from 'react-bootstrap'
+import { Navbar, Form, FormControl, Table, Tab, Tabs } from 'react-bootstrap'
+import { TabContent, TabPane, Container, Row, Col, Card, CardHeader, CardBody, Nav, NavItem, NavLink, } from "reactstrap";
 import infoIcon from './images/infoIcon.png'
 import GitLogo from './images/gitLogo.png'
+import classnames from "classnames";
 
 const Home = () => {
+    const [iconTabs, setIconsTabs] = React.useState(1);
+    const [textTabs, setTextTabs] = React.useState(4);
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -246,120 +250,126 @@ const Home = () => {
                             </div>
                         </section>
 
-                        <Table borderless>
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="220">Programming Languages</th>
-                                    <th scope="col" width="220">Frameworks</th>
-                                    <th scope="col" width="220">Libraries</th>
-                                    <th scope="col" width="220">Database Tools</th>
-                                    <th scope="col" width="220">IDEs</th>
-                                    <th scope="col" width="220">Software</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Python</td>
-                                    <td>React</td>
-                                    <td>NumPy</td>
-                                    <td>MySQL</td>
-                                    <td>Eclipse</td>
-                                    <td>Microsoft Excel</td>
-                                </tr>
-                                <tr>
-                                    <td >JavaScript</td>
-                                    <td>React Native</td>
-                                    <td>Selenium</td>
-                                    <td>XAMPP</td>
-                                    <td>PyCharm</td>
-                                    <td>Microsoft PowerPoint</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td>
-                                    <td>Flask</td>
-                                    <td>OpenPyXL</td>
-                                    <td>MongoDB</td>
-                                    <td>Android Studio</td>
-                                    <td>Microsoft Word</td>
-                                </tr>
-                                <tr>
-                                    <td >Java</td>
-                                    <td>Bootstrap</td>
-                                    <td>PIL</td>
-                                    <td>MongoDB Compass</td>
-                                    <td>Visual Studio Code</td>
-                                    <td>Adobe Photoshop</td>
-                                </tr>
-                                <tr>
-                                    <td >C++</td>
-                                    <td></td>
-                                    <td>Tkinter</td>
-                                    <td>phpMyAdmin</td>
-                                    <td>Code::Blocks</td>
-                                    <td>Camtasia Studio</td>
-                                </tr>
-                                <tr>
-                                    <td >C</td>
-                                    <td></td>
-                                    <td>pynput</td>
-                                    <td></td>
-                                    <td>Android Studio</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td >C#</td>
-                                    <td></td>
-                                    <td>pyttsx3</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td >CSS</td>
-                                    <td></td>
-                                    <td>requests</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td ></td>
-                                    <td></td>
-                                    <td>express</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td ></td>
-                                    <td></td>
-                                    <td>Axios</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td ></td>
-                                    <td></td>
-                                    <td>bcrypt</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td ></td>
-                                    <td></td>
-                                    <td>JDA</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </Table>
-
+                        <Card style={{ backgroundColor: "transparent", alignItems: "center" }}>
+                            <CardHeader>
+                                <Nav className="nav-tabs-info" role="tablist" tabs>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 1, })} onClick={(e) => setIconsTabs(1)}>
+                                            Python</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 2, })} onClick={(e) => setIconsTabs(2)} >
+                                            JavaScript </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 3, })} onClick={(e) => setIconsTabs(3)}>
+                                            HTML & CSS</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 4, })} onClick={(e) => setIconsTabs(4)}>
+                                            Java</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 5, })} onClick={(e) => setIconsTabs(5)}>
+                                            C++</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 6, })} onClick={(e) => setIconsTabs(6)}>
+                                            C & C#</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className={classnames({ active: iconTabs === 7, })} onClick={(e) => setIconsTabs(7)}>
+                                            SQL</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </CardHeader>
+                            <CardBody>
+                                <TabContent className="tab-space" activeTab={"link" + iconTabs} >
+                                    <TabPane tabId="link1">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Expert <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Decoy" style={{ color: "white" }}>Developed Decoy</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ color: "white" }}>Developed LoL Profile Customizer</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals I</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Graphics I</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Artificial Intelligence I</a></li>
+                                        </p>
+                                    </TabPane>
+                                    <TabPane tabId="link2">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Advanced <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
+                                        </p>
+                                    </TabPane>
+                                    <TabPane tabId="link3">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Intermediate <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
+                                        </p>
+                                    </TabPane>
+                                    <TabPane tabId="link4">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Intermediate <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ color: "white" }}>Developed Runeterra Bot</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals II</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Computer Organization & Architecture</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Data Structures & Algorithms</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Software Engineering</a></li>
+                                        </p>
+                                    </TabPane>
+                                    <TabPane tabId="link5">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Intermediate <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
+                                        </p>
+                                    </TabPane>
+                                    <TabPane tabId="link6">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Novice <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Software Tools & Systems Programming</a></li>
+                                        </p>
+                                    </TabPane>
+                                    <TabPane tabId="link7">
+                                        <p style={{ color: "#e6f1ff" }}>
+                                            Proficiency: Advanced <br />
+                                            <br />
+                                            Experience:
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
+                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Information Systems & Design</a></li>
+                                        </p>
+                                    </TabPane>
+                                </TabContent>
+                            </CardBody>
+                        </Card>
+                        <br/>
+                        <br/>
+                        <p style={{ color: "#e6f1ff", textAlign:"center" }}>© Copyright Jacky Liu. All Rights Reserved</p>
+                        <p style={{ color: "#e6f1ff", textAlign:"center" }}>Designed by Jacky Liu</p>
                     </div>
                     <br />
                 </div>
+
+
+
+
 
                 <Modal size="lg" show={show} onHide={handleClose}>
                     <Modal.Header closeButton>

@@ -32,6 +32,7 @@ import { Modal, Button } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
 import { Navbar, Form, FormControl, Table, Tab, Tabs } from 'react-bootstrap'
 import { TabContent, TabPane, Container, Row, Col, Card, CardHeader, CardBody, Nav, NavItem, NavLink, } from "reactstrap";
+import Card2 from 'react-bootstrap/Card'
 import infoIcon from './images/infoIcon.png'
 import GitLogo from './images/gitLogo.png'
 import classnames from "classnames";
@@ -83,7 +84,7 @@ const Home = () => {
     const handleshow11Close = () => setshow11(false);
     const handleshow11Show = () => setshow11(true);
     return (
-        <div id='homeAllBG'>
+        <div id='homeAllBG' style={{ overflowY: 'auto' }}>
             <div id='homeAll' class="homeAll">
                 <section id="projects" class="projects">
                     <section id="headSection" class="d-flex align-items-center justify-content-center">
@@ -136,29 +137,29 @@ const Home = () => {
                 </section>
                 <div id="projs">&nbsp;</div>
                 <section class="home">
-                    <div class="container">
+                    <div id="projects1" class="container">
                         <div class="section-title">
                             <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>PR<u style={{ textDecorationColor: "#64ffda" }}>OJEC</u>TS</b></h2>
                         </div>
                         <br />
-                        <Container style={{ margin: "auto" }}>
+                        <Container>
                             <Row>
                                 <Col>
-                                    <img class="imageProjects" src={MyMovieCatalog} onClick={handleshow11Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="imageProjects" src={MyMovieCatalog} onClick={handleshow11Show} style={{ border: "1px solid #64ffda" }} /></Col>
                                 <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>MyMovieCatalog</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        Web application that allows users to track which movies they have watched, featuring a login and registration server.
+                                    Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
                             </div>
                                     <br />
                                     <br />
-                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>JavaScript, React, SQL</div>
-                                    <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
+                                    <div style={{ textAlign: "left", color: "#ccd6f6", marginTop: "-20px" }}>Java, JDA</div>
+                                    <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
                                 </Col>
                             </Row>
                             <Row style={{ marginTop: "50px" }}>
-                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Music Catalyst</div>
+                                <Col><div style={{ textAlign: "right", color: "#64ffda", fontSize: "20px" }}>Music Catalyst</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
                                         Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server.
@@ -169,11 +170,11 @@ const Home = () => {
                                     <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                                 <Col>
-                                    <img class="imageProjects" src={musicCatalyst} onClick={handleshow5Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="imageProjects" src={musicCatalyst} onClick={handleshow5Show} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
                             </Row>
                             <Row style={{ marginTop: "50px" }}>
                                 <Col>
-                                    <img class="imageProjects" src={RuneterraBot} onClick={handleshow4Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="imageProjects" src={RuneterraBot} onClick={handleshow4Show} style={{ border: "1px solid #64ffda" }} /></Col>
                                 <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Runeterra Bot</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
@@ -181,9 +182,9 @@ const Home = () => {
                             </div>
                                     <br />
                                     <br />
-                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>Java, JDA</div>
-                                    <a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow4Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
+                                    <div style={{ textAlign: "left", color: "#ccd6f6", marginTop: "-20px" }}>Java, JDA</div>
+                                    <a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow4Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
                                 </Col>
                             </Row>
                             <Row style={{ marginTop: "50px" }}>
@@ -198,7 +199,7 @@ const Home = () => {
                                     <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                                 <Col>
-                                    <img class="imageProjects" src={LoLProfileCustomizer} onClick={handleshow10Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="imageProjects" src={LoLProfileCustomizer} onClick={handleshow10Show} width="520" height="300" style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
                             </Row>
                         </Container>
 
@@ -209,7 +210,7 @@ const Home = () => {
                         <Container style={{ margin: "auto" }}>
                             <Row>
                                 <Col>
-                                    <img class="imageProjects" src={Decoy} onClick={handleshow1Show} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="imageProjects" src={Decoy} onClick={handleshow1Show} style={{ border: "1px solid #64ffda" }} /></Col>
                                 <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Decoy</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
@@ -217,9 +218,9 @@ const Home = () => {
                             </div>
                                     <br />
                                     <br />
-                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>Python</div>
-                                    <a href="https://devpost.com/software/decoy" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
+                                    <div style={{ textAlign: "left", color: "#ccd6f6", marginTop: "-20px" }}>Python</div>
+                                    <a href="https://devpost.com/software/decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                    <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
                                 </Col>
                             </Row>
                             <Row style={{ marginTop: "50px" }}>
@@ -234,13 +235,13 @@ const Home = () => {
                                     <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                                 <Col>
-                                    <img class="imageProjects" src={Chowdown} onClick={handleShow} width="520" height="300" style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="imageProjects" src={Chowdown} onClick={handleShow} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
                             </Row>
                         </Container>
                     </div>
                     <div id="skills">&nbsp;</div>
                 </section>
-                <div className="" style={{ marginTop: "50px" }}>
+                <div className="" id="sk" style={{ marginTop: "50px" }}>
                     <div className="skills">
                         <section id="projects">
                             <div class="container">
@@ -249,116 +250,137 @@ const Home = () => {
                                 </div>
                             </div>
                         </section>
-
-                        <Card style={{ backgroundColor: "transparent", alignItems: "center" }}>
-                            <CardHeader>
-                                <Nav className="nav-tabs-info" role="tablist" tabs>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 1, })} onClick={(e) => setIconsTabs(1)}>
-                                            Python</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 2, })} onClick={(e) => setIconsTabs(2)} >
-                                            JavaScript </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 3, })} onClick={(e) => setIconsTabs(3)}>
-                                            HTML & CSS</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 4, })} onClick={(e) => setIconsTabs(4)}>
-                                            Java</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 5, })} onClick={(e) => setIconsTabs(5)}>
-                                            C++</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 6, })} onClick={(e) => setIconsTabs(6)}>
-                                            C & C#</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className={classnames({ active: iconTabs === 7, })} onClick={(e) => setIconsTabs(7)}>
-                                            SQL</NavLink>
-                                    </NavItem>
-                                </Nav>
-                            </CardHeader>
-                            <CardBody>
-                                <TabContent className="tab-space" activeTab={"link" + iconTabs} >
-                                    <TabPane tabId="link1">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Expert <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Decoy" style={{ color: "white" }}>Developed Decoy</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ color: "white" }}>Developed LoL Profile Customizer</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals I</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Graphics I</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Artificial Intelligence I</a></li>
-                                        </p>
-                                    </TabPane>
-                                    <TabPane tabId="link2">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Advanced <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
-                                        </p>
-                                    </TabPane>
-                                    <TabPane tabId="link3">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Intermediate <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
-                                        </p>
-                                    </TabPane>
-                                    <TabPane tabId="link4">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Intermediate <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ color: "white" }}>Developed Runeterra Bot</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals II</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Computer Organization & Architecture</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Data Structures & Algorithms</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Software Engineering</a></li>
-                                        </p>
-                                    </TabPane>
-                                    <TabPane tabId="link5">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Intermediate <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
-                                        </p>
-                                    </TabPane>
-                                    <TabPane tabId="link6">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Novice <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Software Tools & Systems Programming</a></li>
-                                        </p>
-                                    </TabPane>
-                                    <TabPane tabId="link7">
-                                        <p style={{ color: "#e6f1ff" }}>
-                                            Proficiency: Advanced <br />
-                                            <br />
-                                            Experience:
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
-                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Information Systems & Design</a></li>
-                                        </p>
-                                    </TabPane>
-                                </TabContent>
-                            </CardBody>
-                        </Card>
+                        <Container>
+                            <Card style={{ backgroundColor: "transparent", alignItems: "center" }}>
+                                <CardHeader>
+                                    <Nav className="nav-tabs-info" role="tablist" tabs>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 1, })} onClick={(e) => setIconsTabs(1)}>
+                                                Python</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 2, })} onClick={(e) => setIconsTabs(2)} >
+                                                JavaScript </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 3, })} onClick={(e) => setIconsTabs(3)}>
+                                                HTML & CSS</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 4, })} onClick={(e) => setIconsTabs(4)}>
+                                                Java</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 5, })} onClick={(e) => setIconsTabs(5)}>
+                                                C++</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 6, })} onClick={(e) => setIconsTabs(6)}>
+                                                C & C#</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className={classnames({ active: iconTabs === 7, })} onClick={(e) => setIconsTabs(7)}>
+                                                SQL</NavLink>
+                                        </NavItem>
+                                    </Nav>
+                                </CardHeader>
+                                <CardBody>
+                                    <TabContent className="tab-space" activeTab={"link" + iconTabs} style={{ height: "250px" }}>
+                                        <TabPane tabId="link1">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff", flex: "1" }}>
+                                                    <Card2.Title>Proficiency: Expert</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Decoy" style={{ color: "white" }}>Developed Decoy</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ color: "white" }}>Developed LoL Profile Customizer</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals I</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Graphics I</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Artificial Intelligence I</a></li></Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                        <TabPane tabId="link2">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff" }}>
+                                                    <Card2.Title>Proficiency: Advanced</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
+                                                        <br /></Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                        <TabPane tabId="link3">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff" }}>
+                                                    <Card2.Title>Proficiency: Intermediate</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
+                                                        <br /><br /><br /></Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                        <TabPane tabId="link4">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff" }}>
+                                                    <Card2.Title>Proficiency: Intermediate</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ color: "white" }}>Developed Runeterra Bot</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals II</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Computer Organization & Architecture</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Data Structures & Algorithms</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Software Engineering</a></li>
+                                                    </Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                        <TabPane tabId="link5">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff" }}>
+                                                    <Card2.Title>Proficiency: Intermediate</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
+                                                    </Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                        <TabPane tabId="link6">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff" }}>
+                                                    <Card2.Title>Proficiency: Novice</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Software Tools & Systems Programming</a></li>
+                                                    </Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                        <TabPane tabId="link7">
+                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
+                                                <Card2.Body style={{ color: "#e6f1ff" }}>
+                                                    <Card2.Title>Proficiency: Advanced</Card2.Title>
+                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
+                                                    <Card2.Text>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
+                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Information Systems & Design</a></li>
+                                                    </Card2.Text>
+                                                </Card2.Body>
+                                            </Card2>
+                                        </TabPane>
+                                    </TabContent>
+                                </CardBody>
+                            </Card>
+                        </Container>
                         <br />
                         <br />
                         <p style={{ color: "#e6f1ff", textAlign: "center" }}>© Copyright Jacky Liu. All Rights Reserved</p>
@@ -366,6 +388,19 @@ const Home = () => {
                     </div>
                     <br />
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

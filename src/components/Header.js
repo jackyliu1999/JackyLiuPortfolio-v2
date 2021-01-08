@@ -9,7 +9,7 @@ const Header = () => {
                     <Navbar.Brand href="#home" className="img-container"><div id="header" class="container d-flex align-items-center justify-content-between"><h1 class="logo"><a href="/Home">Jacky<span>.</span></a></h1></div>
                     </Navbar.Brand>
                     <Navbar.Toggle className="ml-3 mb-2" aria-controls="responsive-navbar-nav" style={{ backgroundColor: "#e6f1ff" }} />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" style={{textAlign:"right"}}>
                         <Col></Col>
                         <Col md="auto">
                             <div class="nav-menu">

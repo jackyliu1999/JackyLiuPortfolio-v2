@@ -84,7 +84,7 @@ const Home = () => {
     const handleshow11Close = () => setshow11(false);
     const handleshow11Show = () => setshow11(true);
     return (
-        <div id='homeAllBG' style={{ overflowY: 'auto' }}>
+        <div id='homeAllBG' style={{ overflow: 'hidden' }}>
             <div id='homeAll' class="homeAll">
                 <section id="projects" class="projects">
                     <section id="headSection" class="d-flex align-items-center justify-content-center">
@@ -145,11 +145,11 @@ const Home = () => {
                         <Container>
                             <Row>
                                 <Col>
-                                    <img class="imageProjects" src={MyMovieCatalog} onClick={handleshow11Show} style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="img-fluid" src={MyMovieCatalog} onClick={handleshow11Show} style={{ border: "1px solid #64ffda" }} /></Col>
                                 <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>MyMovieCatalog</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                    Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                                        Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
                             </div>
                                     <br />
                                     <br />
@@ -170,11 +170,11 @@ const Home = () => {
                                     <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                                 <Col>
-                                    <img class="imageProjects" src={musicCatalyst} onClick={handleshow5Show} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
+                                    <img class="img-fluid" src={musicCatalyst} onClick={handleshow5Show} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
                             </Row>
                             <Row style={{ marginTop: "50px" }}>
                                 <Col>
-                                    <img class="imageProjects" src={RuneterraBot} onClick={handleshow4Show} style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="img-fluid" src={RuneterraBot} onClick={handleshow4Show} style={{ border: "1px solid #64ffda" }} /></Col>
                                 <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Runeterra Bot</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
@@ -199,7 +199,7 @@ const Home = () => {
                                     <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                                 <Col>
-                                    <img class="imageProjects" src={LoLProfileCustomizer} onClick={handleshow10Show} width="520" height="300" style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
+                                    <img class="img-fluid" src={LoLProfileCustomizer} onClick={handleshow10Show} width="520" height="300" style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
                             </Row>
                         </Container>
 
@@ -210,7 +210,7 @@ const Home = () => {
                         <Container style={{ margin: "auto" }}>
                             <Row>
                                 <Col>
-                                    <img class="imageProjects" src={Decoy} onClick={handleshow1Show} style={{ border: "1px solid #64ffda" }} /></Col>
+                                    <img class="img-fluid" src={Decoy} onClick={handleshow1Show} style={{ border: "1px solid #64ffda" }} /></Col>
                                 <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Decoy</div>
                                     <br />
                                     <div style={{ color: "#e6f1ff", textAlign: "left" }}>
@@ -235,7 +235,7 @@ const Home = () => {
                                     <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
                                 </Col>
                                 <Col>
-                                    <img class="imageProjects" src={Chowdown} onClick={handleShow} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
+                                    <img class="img-fluid" src={Chowdown} onClick={handleShow} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
                             </Row>
                         </Container>
                     </div>
@@ -285,97 +285,112 @@ const Home = () => {
                                     </Nav>
                                 </CardHeader>
                                 <CardBody>
-                                    <TabContent className="tab-space" activeTab={"link" + iconTabs} style={{ height: "250px" }}>
+                                    <TabContent className="tab-space" activeTab={"link" + iconTabs} style={{ height: "250px", color: "#e6f1ff" }}>
                                         <TabPane tabId="link1">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff", flex: "1" }}>
-                                                    <Card2.Title>Proficiency: Expert</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Decoy" style={{ color: "white" }}>Developed Decoy</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ color: "white" }}>Developed LoL Profile Customizer</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals I</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Graphics I</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Artificial Intelligence I</a></li></Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginRight: "91px" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Expert</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Decoy" style={{ color: "white" }}>Developed Decoy</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ color: "white" }}>Developed LoL Profile Customizer</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals I</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Graphics I</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Artificial Intelligence I</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                         <TabPane tabId="link2">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff" }}>
-                                                    <Card2.Title>Proficiency: Advanced</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
-                                                        <br /></Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Advanced</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                         <TabPane tabId="link3">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff" }}>
-                                                    <Card2.Title>Proficiency: Intermediate</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
-                                                        <br /><br /><br /></Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Intermediate</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                         <TabPane tabId="link4">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff" }}>
-                                                    <Card2.Title>Proficiency: Intermediate</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ color: "white" }}>Developed Runeterra Bot</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals II</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Computer Organization & Architecture</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Data Structures & Algorithms</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Software Engineering</a></li>
-                                                    </Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginLeft: "11px" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Intermediate</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ color: "white" }}>Developed Runeterra Bot</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals II</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Computer Organization & Architecture</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Data Structures & Algorithms</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Software Engineering</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                         <TabPane tabId="link5">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff" }}>
-                                                    <Card2.Title>Proficiency: Intermediate</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
-                                                    </Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginLeft: "21px" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Intermediate</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                         <TabPane tabId="link6">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff" }}>
-                                                    <Card2.Title>Proficiency: Novice</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Software Tools & Systems Programming</a></li>
-                                                    </Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginLeft: "21px" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Novice</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Software Tools & Systems Programming</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                         <TabPane tabId="link7">
-                                            <Card2 style={{ width: '40rem', backgroundColor: "transparent" }}>
-                                                <Card2.Body style={{ color: "#e6f1ff" }}>
-                                                    <Card2.Title>Proficiency: Advanced</Card2.Title>
-                                                    <Card2.Subtitle style={{ marginBottom: "10px" }}>Experience: </Card2.Subtitle>
-                                                    <Card2.Text>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
-                                                        <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Information Systems & Design</a></li>
-                                                    </Card2.Text>
-                                                </Card2.Body>
-                                            </Card2>
+                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginRight: "71px" }}>
+                                                <div class="row">
+                                                    <div class="col-lg-100">
+                                                        <h5 class="resume-title">Proficiency: Advanced</h5>
+                                                        <h6 class="resume-title">Experience</h6>
+                                                        <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Information Systems & Design</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </TabPane>
                                     </TabContent>
                                 </CardBody>
@@ -450,6 +465,10 @@ const Home = () => {
                         <br /> <b>How it was built:</b><br />
         We utilized Python to build Decoy, incorporating the libraries pynput, webbrowser, speech_recognition, requests, cv2, smtplib, ssl and email.mime.
         <img class="img-fluid" src={Decoy4} alt="" />
+                        <br /><br /><b>Video Demo, narrated by  <a href="https://github.com/jacky-h-nguyen">Jacky Nguyen</a> and <a href="https://github.com/ansonwong250"> Anson Wong</a>: </b><br />
+                        <center><div class="video-container"><iframe width="700" height="500"
+                            src="https://www.youtube.com/embed/XdKzwtFOFWE">
+                        </iframe></div></center>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleshow1Close}>
@@ -554,9 +573,9 @@ const Home = () => {
                     <Modal.Body>
                         <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Music-Catalyst" >github.com/jackyliu1999/Music-Catalyst</a></b><br />
                         <b>Video Demo: </b><br />
-                        <center><iframe width="700" height="500"
+                        <center><div class="video-container"><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/zCJFEet8Yac">
-                        </iframe></center>
+                        </iframe></div></center>
                         <b>Frontend Dependencies: </b><br />
                         <li>mobx</li>
                         <li>mobx-react</li>
@@ -636,9 +655,9 @@ const Home = () => {
                     <Modal.Body>
                         <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/LoLProfileCustomizer" >github.com/jackyliu1999/LoLProfileCustomizer</a></b><br />
                         <b>Video Demo: </b><br />
-                        <center><iframe width="700" height="500"
+                        <center><div class="video-container"><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/w17E0kt0C9g">
-                        </iframe></center>
+                        </iframe></div></center>
                         <b>Dependencies: </b><br />
                         <li>lcu-driver</li>
                         <b>What it does and how it was built: </b><br />
@@ -665,9 +684,9 @@ const Home = () => {
                         <b>GitHub Frontend: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/MyMovieCatalog" >github.com/jackyliu1999/MyMovieCatalog</a></b><br />
                         <b>GitHub Backend: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/MyMovieCatalog-backend" >github.com/jackyliu1999/MyMovieCatalog-backend</a></b><br />
                         <b>Video Demo: </b><br />
-                        <center><iframe width="700" height="500"
+                        <center><div class="video-container"><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/chwMsQyAs5Q">
-                        </iframe></center>
+                        </iframe></div></center>
                         <b>Frontend Dependencies: </b><br />
                         <li>bootstrap</li>
                         <li>mobx</li>

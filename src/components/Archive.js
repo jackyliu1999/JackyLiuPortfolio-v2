@@ -49,50 +49,51 @@ const Archive = () => {
                             <th scope="col">Title</th>
                             <th scope="col">Built With</th>
                             <th scope="col">Description</th>
-                            <th scope="col">GitHub</th>
-                            <th scope="col">Info</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td >2020</td>
                             <td >ChatJS</td>
-                            <td width="200">JavaScript, React, SQL, socket.io</td>
-                            <td >Frontend and backend for a chatroom web application developed using React. Features a login and registration server. Incorporates Socket.IO in order to implement the functionality that allows communication between users.</td>
-                            <td><a href="https://github.com/jackyliu1999/ChatJS"> <img src={GitLogo} alt="" /></a></td>
-                            <td><img src={infoIcon} onClick={handleshow9Show} alt="" /></td>
+                            <td>JavaScript<br /> React<br />  SQL<br />  socket.io</td>
+                            <td >Frontend and backend for a chatroom web application developed using React. Features a login and registration server. Incorporates Socket.IO in order to implement the functionality that allows communication between users.
+                                <br /><a href="https://github.com/jackyliu1999/ChatJS"> <img src={GitLogo} alt="" /></a> <img src={infoIcon} onClick={handleshow9Show} alt="" />
+                            </td>
                         </tr>
                         <tr>
                             <td >2020</td>
                             <td >COVID19 Stats Tracker</td>
                             <td >Python</td>
-                            <td >Created for Hackathon, BOTHACKS. Incorporates APIs that draw live data including total cases, total recovered and total deaths in order to inform the user of the severity and numbers of the COVID-19 pandemic.</td>
-                            <td ><a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker"> <img src={GitLogo} alt="" /></a></td>
-                            <td><img src={infoIcon} onClick={handleshow3Show} alt="" /></td>
+                            <td >Created for Hackathon, BOTHACKS. Incorporates APIs that draw live data including total cases, total recovered and total deaths in order to inform the user of the severity and numbers of the COVID-19 pandemic.
+                            <br /><a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker"> <img src={GitLogo} alt="" /> </a><img src={infoIcon} onClick={handleshow3Show} alt="" />
+                            </td>
                         </tr>
                         <tr>
                             <td >2020</td>
                             <td >Notes to Text Converter</td>
                             <td >Python</td>
-                            <td >Takes handwritten notes and converts them into text. Incorporates optical character recognition tool, pytesseract for the conversion functionality. Tkinter was utilized in order to provide a user-friendly interface.</td>
-                            <td ><a href="https://github.com/jackyliu1999/Notes-to-Text-Converter"> <img src={GitLogo} alt="" /></a></td>
-                            <td><img src={infoIcon} onClick={handleshow2Show} alt="" /></td>
+                            <td >Takes handwritten notes and converts them into text. Incorporates optical character recognition tool, pytesseract for the conversion functionality. Tkinter was utilized in order to provide a user-friendly interface.
+                            <br /><a href="https://github.com/jackyliu1999/Notes-to-Text-Converter"> <img src={GitLogo} alt="" /> </a>
+                                <img src={infoIcon} onClick={handleshow2Show} alt="" />
+                            </td>
                         </tr>
                         <tr>
                             <td >2020</td>
                             <td >Bitcoin Price Notifier</td>
                             <td>Python</td>
-                            <td>Notifies users of Bitcoin price fluctuation by extracting the live price of Bitcoin from Yahoo Finance. Allows users to set a benchmark and once the price hits the designated benchmark, verbally notifies user.</td>
-                            <td><a href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier"> <img src={GitLogo} alt="" /></a></td>
-                            <td><img src={infoIcon} onClick={handleshow8Show} alt="" /></td>
+                            <td>Notifies users of Bitcoin price fluctuation by extracting the live price of Bitcoin from Yahoo Finance. Allows users to set a benchmark and once the price hits the designated benchmark, verbally notifies user.
+                            <br /><a href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier"> <img src={GitLogo} alt="" /> </a>
+                                <img src={infoIcon} onClick={handleshow8Show} alt="" />
+                            </td>
                         </tr>
                         <tr>
                             <td >2020</td>
                             <td>Desktop Cleaner</td>
                             <td>Python</td>
-                            <td>Desktop cleaner is a Python-based automation script that sorts folders based on file type (images, documents, spreadsheets, installers, music, videos) into a user inputted directory.</td>
-                            <td><a href="https://github.com/jackyliu1999/Desktop-Cleaner"> <img src={GitLogo} alt="" /></a></td>
-                            <td><img src={infoIcon} onClick={handleshow7Show} alt="" /></td>
+                            <td>Desktop cleaner is a Python-based automation script that sorts folders based on file type (images, documents, spreadsheets, installers, music, videos) into a user inputted directory.
+                            <br /><a href="https://github.com/jackyliu1999/Desktop-Cleaner"> <img src={GitLogo} alt="" /> </a>
+                                <img src={infoIcon} onClick={handleshow7Show} alt="" />
+                            </td>
                         </tr>
                     </tbody>
                 </Table>
@@ -210,9 +211,9 @@ const Archive = () => {
                     <Modal.Body>
                         <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/ChatJS" >github.com/jackyliu1999/ChatJS</a></b><br />
                         <b>Video Demo: </b><br />
-                        <center><iframe width="700" height="500"
+                        <center><div class="video-container"><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/26YkidHsaPo">
-                        </iframe></center>
+                        </iframe></div></center>
                         <b>Frontend Dependencies: </b><br />
                         <li>mobx</li>
                         <li>mobx-react</li>

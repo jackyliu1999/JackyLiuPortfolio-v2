@@ -35,9 +35,7 @@ const Resume = () => {
                                     <h4>Ontario Scholar</h4>
                                     <h5>June 2017</h5>
                                     <p>
-                                        <ul>
-                                            <li>Awarded to high school students who achieved an average of 80% or greater in their graduating year</li>
-                                        </ul>
+                                        <li>Awarded to high school students who achieved an average of 80% or greater in their graduating year</li>
                                     </p>
                                 </div>
                             </div>
@@ -48,9 +46,17 @@ const Resume = () => {
                                     <h4>Frameworks and Libraries</h4>
                                     <p>
                                         <ul>
-                                            <li><b>Python:</b> Django, Keras, NumPy, OpenPyXL, PIL, Selenium, SpeechRecognition, TensorFlow, Tkinter, pandas, pynput, pytesseract, pyttsx3, ibm_watson, requests, scikit-learn</li>
-                                            <li><b>JavaScript: </b>React Native, React, Bootstrap, Django, Axios, bcrypt, express, socket.io, react-scroll-to-bottom, react-emoji</li>
-                                            <li><b>Java: </b>JDA, Orianna</li>
+                                            <li>
+                                                <b>Python:</b>
+                                                <li><em>Proficient: </em> Selenium, Tkinter, requests, SpeechRecognition, pyttsx3, pynput</li>
+                                                <li><em>Exposure: </em>Django, Keras, NumPy, OpenPyXL, PIL, TensorFlow, pandas, pytesseract, ibm_watson, scikit-learn</li>
+                                            </li>
+                                            <li><b>JavaScript: </b>
+                                                <li><em>Proficient: </em> React, Bootstrap, Axios, Express, Express</li>
+                                                <li><em>Exposure: </em>  React Native, bcrypt, socket.io, react-scroll-to-bottom, react-emoji, @material-ui/core</li>
+                                            </li>
+                                            <li><b>Java: </b>
+                                                <li><em>Exposure: </em>JDA, Orianna </li></li>
                                         </ul>
                                     </p>
                                 </div>

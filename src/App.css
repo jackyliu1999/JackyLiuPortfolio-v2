@@ -407,9 +407,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0 0 0;
   font-size: 24px;
 }
+
 .icon-box
 {
-
+  background-color:rgba(0, 0, 0, 0.5);
 }
 #headSection .icon-box {
   padding: 20px 20px;
@@ -488,10 +489,15 @@ h1, h2, h3, h4, h5, h6 {
   height:auto;
   width: 20px;
 }
+
+.homeAll
+{
+background:#0a192f;
+}
+
 /* projects */
-.homeAll {
-  /* background-image: url("./components/images/background1.jpg"); */
-  background-color: #0a192f;
+.projects {
+  background-image: url("./components/images/background1.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -505,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   top: 0;
   bottom: 0;
-
+  /* background: rgba(0, 0, 0, 0.5); */
   z-index: 9;
 }
 
@@ -816,4 +822,56 @@ h1, h2, h3, h4, h5, h6 {
   min-height: auto;}
 
 body    {overflow-y:scroll;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+/*Flex items*/
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item {
+	display: flex; 
+  padding: 0.5em;
+	width: 90%;
+}
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+.list-content {
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+	width: 85%;
+}
+.list-content p {
+	flex: 1 0 auto;
+}
+
+.fit {
+  max-width: 110%;
+  max-height: 110%;
+}
 

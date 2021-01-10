@@ -31,11 +31,12 @@ import resumeIcon from './images/resumeIcon.png'
 import { Modal, Button } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
 import { Navbar, Form, FormControl, Table, Tab, Tabs } from 'react-bootstrap'
-import { TabContent, TabPane, Container, Row, Col, Card, CardHeader, CardBody, Nav, NavItem, NavLink, } from "reactstrap";
+import { TabContent, TabPane, Container, Row, Col, CardHeader, CardBody, Nav, NavItem, NavLink, Card } from "reactstrap";
 import Card2 from 'react-bootstrap/Card'
-import infoIcon from './images/infoIcon.png'
-import GitLogo from './images/gitLogo.png'
+import infoIcon from './images/infoIcon2.png'
+import GitLogo from './images/gitLogo2.png'
 import classnames from "classnames";
+
 
 const Home = () => {
     const [iconTabs, setIconsTabs] = React.useState(1);
@@ -83,6 +84,7 @@ const Home = () => {
     const [show11, setshow11] = React.useState(false);
     const handleshow11Close = () => setshow11(false);
     const handleshow11Show = () => setshow11(true);
+
     return (
         <div id='homeAllBG' style={{ overflow: 'hidden' }}>
             <div id='homeAll' class="homeAll">
@@ -133,114 +135,101 @@ const Home = () => {
                             </div>
                         </div>
                     </section>
-
                 </section>
                 <div id="projs">&nbsp;</div>
-                <section class="home">
-                    <div id="projects1" class="container">
-                        <div class="section-title">
-                            <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>PR<u style={{ textDecorationColor: "#64ffda" }}>OJEC</u>TS</b></h2>
-                        </div>
-                        <br />
-                        <Container>
-                            <Row>
-                                <Col>
-                                    <img class="img-fluid" src={MyMovieCatalog} onClick={handleshow11Show} style={{ border: "1px solid #64ffda" }} /></Col>
-                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>MyMovieCatalog</div>
-                                    <br />
-                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
-                            </div>
-                                    <br />
-                                    <br />
-                                    <div style={{ textAlign: "left", color: "#ccd6f6", marginTop: "-20px" }}>Java, JDA</div>
-                                    <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
-                                </Col>
-                            </Row>
-                            <Row style={{ marginTop: "50px" }}>
-                                <Col><div style={{ textAlign: "right", color: "#64ffda", fontSize: "20px" }}>Music Catalyst</div>
-                                    <br />
-                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server.
-                            </div>
-                                    <br /><br />
-                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>JavaScript, React, SQL</div>
-                                    <a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
-                                </Col>
-                                <Col>
-                                    <img class="img-fluid" src={musicCatalyst} onClick={handleshow5Show} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
-                            </Row>
-                            <Row style={{ marginTop: "50px" }}>
-                                <Col>
-                                    <img class="img-fluid" src={RuneterraBot} onClick={handleshow4Show} style={{ border: "1px solid #64ffda" }} /></Col>
-                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Runeterra Bot</div>
-                                    <br />
-                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        Discord Bot that allows League of Legends players to look up live game stats, ranked information and summoner information.
-                            </div>
-                                    <br />
-                                    <br />
-                                    <div style={{ textAlign: "left", color: "#ccd6f6", marginTop: "-20px" }}>Java, JDA</div>
-                                    <a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow4Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
-                                </Col>
-                            </Row>
-                            <Row style={{ marginTop: "50px" }}>
-                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>LoL Profile Customizer</div>
-                                    <br />
-                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        Allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.
-                            </div>
-                                    <br /><br />
-                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>Python</div>
-                                    <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
-                                </Col>
-                                <Col>
-                                    <img class="img-fluid" src={LoLProfileCustomizer} onClick={handleshow10Show} width="520" height="300" style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
-                            </Row>
-                        </Container>
+                <div class="section-title">
+                    <h2 style={{ color: "#e6f1ff", textAlign: "center", marginTop: "30px" }}> <b>PR<u style={{ textDecorationColor: "#64ffda" }}>OJEC</u>TS</b></h2>
+                    <br/>
+                </div>
 
-                        <div class="section-title" style={{ marginTop: "50px" }}>
-                            <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>HA<u style={{ textDecorationColor: "#64ffda" }}>CKATHO</u>NS</b></h2>
+
+
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>MyMovieCatalog</h3>
+                            <img class="fit" src={MyMovieCatalog} onClick={handleshow11Show} alt="" />
+                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
+                                <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
                         </div>
-                        <br />
-                        <Container style={{ margin: "auto" }}>
-                            <Row>
-                                <Col>
-                                    <img class="img-fluid" src={Decoy} onClick={handleshow1Show} style={{ border: "1px solid #64ffda" }} /></Col>
-                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>Decoy</div>
-                                    <br />
-                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        A Python-based application that mitigates damages caused by physical computer theft by detecting and tracking unauthorized users.
-                            </div>
-                                    <br />
-                                    <br />
-                                    <div style={{ textAlign: "left", color: "#ccd6f6", marginTop: "-20px" }}>Python</div>
-                                    <a href="https://devpost.com/software/decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
-                                </Col>
-                            </Row>
-                            <Row style={{ marginTop: "50px" }}>
-                                <Col><div style={{ textAlign: "left", color: "#64ffda", fontSize: "20px" }}>ChowDown!</div>
-                                    <br />
-                                    <div style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                        A full stack mobile application that assist users in recognizing food based on images, searching for recipes and locating nearby restaurant.
-                            </div>
-                                    <br /><br />
-                                    <div style={{ textAlign: "right", color: "#ccd6f6", marginTop: "-20px" }}>JavaScript, React-Native, Python</div>
-                                    <a href="https://devpost.com/software/chowdown" style={{ marginTop: "20px", float: "right" }}> <img src={GitLogo} alt="" /></a>
-                                    <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "right", marginRight: "10px" }} />
-                                </Col>
-                                <Col>
-                                    <img class="img-fluid" src={Chowdown} onClick={handleShow} style={{ border: "1px solid #64ffda", marginTop: "20px" }} /></Col>
-                            </Row>
-                        </Container>
-                    </div>
-                    <div id="skills">&nbsp;</div>
-                </section>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Music Catalyst</h3>
+                            <img class="fit" src={musicCatalyst} onClick={handleshow5Show} alt="" />
+                            <p>Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
+                                <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Runeterra Bot</h3>
+                            <img class="fit" src={RuneterraBot} onClick={handleshow4Show} alt="" />
+                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                                <br /><br />
+                                <img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow4Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>LoL Profile Customizer</h3>
+                            <img class="fit" src={LoLProfileCustomizer} onClick={handleshow10Show} alt="" />
+                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Decoy</h3>
+                            <img class="fit" src={Decoy} onClick={handleshow1Show} alt="" />
+                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>ChowDown!</h3>
+                            <img class="fit" src={Chowdown} onClick={handleShow} alt="" />
+                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <br /><br />
+                            <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Chowdown" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="skills">&nbsp;</div>
                 <div className="" id="sk" style={{ marginTop: "50px" }}>
                     <div className="skills">
                         <section id="projects">
@@ -400,8 +389,8 @@ const Home = () => {
                         <br />
                         <p style={{ color: "#e6f1ff", textAlign: "center" }}>© Copyright Jacky Liu. All Rights Reserved</p>
                         <p style={{ color: "#e6f1ff", textAlign: "center" }}>Designed by Jacky Liu</p>
+                        <br/>
                     </div>
-                    <br />
                 </div>
 
 

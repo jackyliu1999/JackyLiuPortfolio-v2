@@ -4,7 +4,7 @@ import { Navbar, Nav, Form, FormControl, Button, Container, Col } from "react-bo
 const Header = () => {
     return (
         <div className="">
-            <Navbar expand="xl" style={{ background: "#0a192f" }} fixed="top" collapseOnSelect>
+            <Navbar expand="xl" style={{ background: "black" }} fixed="top" collapseOnSelect>
                 <Container fluid>
                     <Navbar.Brand href="#home" className="img-container"><div id="header" class="container d-flex align-items-center justify-content-between"><h1 class="logo"><a href="/Home">Jacky<span>.</span></a></h1></div>
                     </Navbar.Brand>

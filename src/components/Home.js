@@ -35,6 +35,7 @@ import { TabContent, TabPane, Container, Row, Col, CardHeader, CardBody, Nav, Na
 import Card2 from 'react-bootstrap/Card'
 import infoIcon from './images/infoIcon2.png'
 import GitLogo from './images/gitLogo2.png'
+import SpaceWar from './images/SpaceWar.png'
 import classnames from "classnames";
 
 
@@ -84,6 +85,10 @@ const Home = () => {
     const [show11, setshow11] = React.useState(false);
     const handleshow11Close = () => setshow11(false);
     const handleshow11Show = () => setshow11(true);
+
+    const [show12, setshow12] = React.useState(false);
+    const handleshow12Close = () => setshow12(false);
+    const handleshow12Show = () => setshow12(true);
 
     return (
         <div id='homeAllBG' style={{ overflow: 'hidden' }}>
@@ -139,7 +144,7 @@ const Home = () => {
                 <div id="projs">&nbsp;</div>
                 <div class="section-title">
                     <h2 style={{ color: "#e6f1ff", textAlign: "center", marginTop: "30px" }}> <b>PR<u style={{ textDecorationColor: "#64ffda" }}>OJEC</u>TS</b></h2>
-                    <br/>
+                    <br />
                 </div>
 
 
@@ -219,13 +224,25 @@ const Home = () => {
                             <img class="fit" src={Chowdown} onClick={handleShow} alt="" />
                             <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
                             <br /><br />
-                            <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
                                 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
                                 <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
                                 <br />
                                 <a href="https://github.com/jackyliu1999/Chowdown" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
                                 <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Space War</h3>
+                            <img class="fit" src={SpaceWar} onClick={handleshow12Show} alt="" />
+                            <p>Final Project for CS3307, achieving 94%. Space War is a 2D space shooter game created developed in C++ using the SFML library.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&logo=c%2B%2B&ogoColor=white&style=for-the-badge"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Space-War" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow12Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
                         </div>
                     </li>
                 </ul>
@@ -346,6 +363,7 @@ const Home = () => {
                                                         <h5 class="resume-title">Proficiency: Intermediate</h5>
                                                         <h6 class="resume-title">Experience</h6>
                                                         <div class="resume-item">
+                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }} href="https://github.com/jackyliu1999/Space-War">Developed Space War</a></li>
                                                             <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
                                                             <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
                                                         </div>
@@ -389,7 +407,7 @@ const Home = () => {
                         <br />
                         <p style={{ color: "#e6f1ff", textAlign: "center" }}>© Copyright Jacky Liu. All Rights Reserved</p>
                         <p style={{ color: "#e6f1ff", textAlign: "center" }}>Designed by Jacky Liu</p>
-                        <br/>
+                        <br />
                     </div>
                 </div>
 
@@ -454,7 +472,7 @@ const Home = () => {
                         <br /> <b>How it was built:</b><br />
         We utilized Python to build Decoy, incorporating the libraries pynput, webbrowser, speech_recognition, requests, cv2, smtplib, ssl and email.mime.
         <img class="img-fluid" src={Decoy4} alt="" />
-                        <br /><br /><b>Video Demo, narrated by  <a href="https://github.com/jacky-h-nguyen">Jacky Nguyen</a> and <a href="https://github.com/ansonwong250"> Anson Wong</a>: </b><br />
+                        <br /><br /><b>Video Demo, narrated by  <a href="https://github.com/jacky-h-nguyen" style={{ color: "blue" }}>Jacky Nguyen</a> and <a href="https://github.com/ansonwong250" style={{ color: "blue" }}> Anson Wong</a>: </b><br />
                         <center><div class="video-container"><iframe width="700" height="500"
                             src="https://www.youtube.com/embed/XdKzwtFOFWE">
                         </iframe></div></center>
@@ -703,6 +721,44 @@ const Home = () => {
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleshow11Close}>
+                            Close
+          </Button>
+                    </Modal.Footer>
+                </Modal>
+
+                <Modal size="lg" show={show12} onHide={handleshow12Close}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Space War</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <b>GitHub Frontend: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Space-War" >github.com/jackyliu1999/Space-War</a></b><br />
+                        <b>Dependencies: </b><br />
+                        <li><a style={{ color: "blue" }} href="https://git-scm.com" >Git</a></li>
+                        <li><a style={{ color: "blue" }} href="https://www.sfml-dev.org" >SFML (mingW)</a></li>
+                        <li><a style={{ color: "blue" }} href="http://www.codeblocks.org" >Code::Blocks, Download the binary release (mingW if you are using Windows)</a></li>
+                        <b>Overview: </b><br />
+                        Developed as the final project for CS3307 Object-Oriented Design and Analysis, achieving 94%. Space War is a 2D space shooter game created developed in C++ using the SFML library. The goal of this game is for the player to defeating enough enemies to advance stages. <br />
+                        <br /><b>Installation: </b><br />
+                        <li>1. Open your terminal</li>
+                        <li>2. Run `git clone https://repo.csd.uwo.ca/scm/compsci3307_f2020/group11.git`</li>
+                        <li>3. Go to your "sfml" folder, and then go the "bin" folder</li>
+                        <li>4. Select and copy all the files in the "bin" folder</li>
+                        <li>5. Go to our project folder</li>
+                        <li>6. Go to "bin" folder, and then go to "Debug" folder</li>
+                        <li>7. Paste all the files from sfml's bin folder to here</li>
+                        <li>8. Open the Code::Blocks program</li>
+                        <li>9. Click open the exiting project</li>
+                        <li>10. Go to our project and find "SpaceWar.cbp"</li>
+                        <br /><b>Run: </b><br />
+                        <li>1. Click "build and run" on the top menu bar</li>
+                        <br /><b>Play: </b><br />
+                        <li>Use arrow keys to move</li>
+                        <li>Spacebar to shoot</li>
+                        <br />
+                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/CyaTmrw" >Ivan Zhang</a>, Danish Amrohi, Jadd Miguel Arriola, Zeyu Zhang<br />
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleshow12Close}>
                             Close
           </Button>
                     </Modal.Footer>

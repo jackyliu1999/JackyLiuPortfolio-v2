@@ -186,7 +186,7 @@ const Home = () => {
                         <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Runeterra Bot</h3>
                             <img class="fit" src={RuneterraBot} onClick={handleshow4Show} alt="" />
-                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <p>Discord Bot, developed in Java that allows League of Legends players to look up live game stats, ranked information and summoner information through the Discord application.
                                 <br /><br />
                                 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"></img>
                                 <br />
@@ -198,7 +198,7 @@ const Home = () => {
                         <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>LoL Profile Customizer</h3>
                             <img class="fit" src={LoLProfileCustomizer} onClick={handleshow10Show} alt="" />
-                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <p>Python Application that allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.
                             <br /><br />
                                 <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
                                 <br />
@@ -210,7 +210,7 @@ const Home = () => {
                         <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Decoy</h3>
                             <img class="fit" src={Decoy} onClick={handleshow1Show} alt="" />
-                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <p>Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage.
                             <br /><br />
                                 <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
                                 <br />
@@ -222,7 +222,7 @@ const Home = () => {
                         <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>ChowDown!</h3>
                             <img class="fit" src={Chowdown} onClick={handleShow} alt="" />
-                            <p>Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.
+                            <p>Mobile application that allows the user to search for restaurants and recipes via image recognition or keyword search as well as acquiring recipes from a list of specified ingredients.
                             <br /><br />
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
@@ -237,7 +237,7 @@ const Home = () => {
                         <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Space War</h3>
                             <img class="fit" src={SpaceWar} onClick={handleshow12Show} alt="" />
-                            <p>Final Project for CS3307, achieving 94%. Space War is a 2D space shooter game created developed in C++ using the SFML library.
+                            <p>Final Project for CS3307, achieving 94%. Space War is a 2D space shooter game developed in C++ using the SFML library.
                             <br /><br />
                                 <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&logo=c%2B%2B&ogoColor=white&style=for-the-badge"></img>
                                 <br />
@@ -252,157 +252,21 @@ const Home = () => {
                         <section id="projects">
                             <div class="container">
                                 <div class="section-title">
-                                    <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b>S<u style={{ textDecorationColor: "#64ffda" }}>KILL</u>S</b></h2>
+                                    <h2 style={{ color: "#e6f1ff", textAlign: "center" }}> <b><u style={{ textDecorationColor: "#64ffda" }}>SKILLS</u></b></h2>
                                 </div>
                             </div>
                         </section>
-                        <Container>
-                            <Card style={{ backgroundColor: "transparent", alignItems: "center" }}>
-                                <CardHeader>
-                                    <Nav className="nav-tabs-info" role="tablist" tabs>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 1, })} onClick={(e) => setIconsTabs(1)}>
-                                                Python</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 2, })} onClick={(e) => setIconsTabs(2)} >
-                                                JavaScript </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 3, })} onClick={(e) => setIconsTabs(3)}>
-                                                HTML & CSS</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 4, })} onClick={(e) => setIconsTabs(4)}>
-                                                Java</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 5, })} onClick={(e) => setIconsTabs(5)}>
-                                                C++</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 6, })} onClick={(e) => setIconsTabs(6)}>
-                                                C & C#</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className={classnames({ active: iconTabs === 7, })} onClick={(e) => setIconsTabs(7)}>
-                                                SQL</NavLink>
-                                        </NavItem>
-                                    </Nav>
-                                </CardHeader>
-                                <CardBody>
-                                    <TabContent className="tab-space" activeTab={"link" + iconTabs} style={{ height: "250px", color: "#e6f1ff" }}>
-                                        <TabPane tabId="link1">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginRight: "91px" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Expert</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Decoy" style={{ color: "white" }}>Developed Decoy</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ color: "white" }}>Developed LoL Profile Customizer</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals I</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Graphics I</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Artificial Intelligence I</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                        <TabPane tabId="link2">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Advanced</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                        <TabPane tabId="link3">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Intermediate</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication I</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Multimedia And Communication II</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                        <TabPane tabId="link4">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginLeft: "11px" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Intermediate</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ color: "white" }}>Developed Runeterra Bot</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Fundamentals II</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Computer Organization & Architecture</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Data Structures & Algorithms</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Introduction To Software Engineering</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                        <TabPane tabId="link5">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginLeft: "21px" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Intermediate</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }} href="https://github.com/jackyliu1999/Space-War">Developed Space War</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Operating Systems</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Objected-Oriented Design & Analysis</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                        <TabPane tabId="link6">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginLeft: "21px" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Novice</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Software Tools & Systems Programming</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                        <TabPane tabId="link7">
-                                            <div class="container" style={{ color: "#e6f1ff", textAlign: "left", marginRight: "71px" }}>
-                                                <div class="row">
-                                                    <div class="col-lg-100">
-                                                        <h5 class="resume-title">Proficiency: Advanced</h5>
-                                                        <h6 class="resume-title">Experience</h6>
-                                                        <div class="resume-item">
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ color: "white" }}>Developed MyMovieCatalog</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ color: "white" }}>Developed Music Catalyst</a></li>
-                                                            <li style={{ marginLeft: "20px" }}><a style={{ color: "white" }}>University of Western Ontario - Computer Science Information Systems & Design</a></li>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                        </Container>
+                        <div style={{ textAlign: "center", fontSize: "70px", color: "white", wordWrap:"break-word" }}><p>
+                        <i class="devicon-python-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-cplusplus-plain-wordmark colored"></i>
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                        <i class="devicon-react-original-wordmark colored"></i>
+                        </p></div>
                         <br />
                         <br />
                         <p style={{ color: "#e6f1ff", textAlign: "center" }}>© Copyright Jacky Liu. All Rights Reserved</p>

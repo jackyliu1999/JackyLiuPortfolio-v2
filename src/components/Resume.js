@@ -16,7 +16,7 @@ const Resume = () => {
                             <div class="col-lg-6">
                                 <h3 class="resume-title">Education</h3>
                                 <div class="resume-item">
-                                    <h4>Ontario Secondary School Diploma	</h4>
+                                    <h4>Ontario Secondary School Diploma</h4>
                                     <h5>September 2013 to June 2017</h5>
                                 </div>
                                 <div class="resume-item">
@@ -48,15 +48,11 @@ const Resume = () => {
                                         <ul>
                                             <li>
                                                 <b>Python:</b>
-                                                <li><em>Proficient: </em> Selenium, Tkinter, requests, SpeechRecognition, pyttsx3, pynput</li>
-                                                <li><em>Exposure: </em>Django, Keras, NumPy, OpenPyXL, PIL, TensorFlow, pandas, pytesseract, ibm_watson, scikit-learn</li>
+                                                <li>Selenium, Tkinter, requests, SpeechRecognition, pyttsx3, pynput</li>
                                             </li>
                                             <li><b>JavaScript: </b>
-                                                <li><em>Proficient: </em> React, Bootstrap, Axios, Express, Express</li>
-                                                <li><em>Exposure: </em>  React Native, bcrypt, socket.io, react-scroll-to-bottom, react-emoji, @material-ui/core</li>
+                                                <li>React, React Native, Bootstrap, Axios, Express, bcrypt, socket.io, @material-ui/core</li>
                                             </li>
-                                            <li><b>Java: </b>
-                                                <li><em>Exposure: </em>JDA, Orianna </li></li>
                                         </ul>
                                     </p>
                                 </div>
@@ -64,10 +60,10 @@ const Resume = () => {
                                     <h4>Software, IDEs and Tools</h4>
                                     <p>
                                         <ul>
-                                            <li><b>Photo and Video Editing:</b> Adobe Photoshop, Camtasia Studio</li>
+                                            <li><b>Image and Video Editing:</b> Adobe Photoshop, Camtasia Studio</li>
                                             <li><b>Programming Software and IDEs:</b> Eclipse, Git, PyCharm, Anaconda, Android Studio, Node.js, Code::Blocks</li>
                                             <li><b>Microsoft:</b> Microsoft Excel, Microsoft PowerPoint, Microsoft Word</li>
-                                            <li><b>Databases and Servers:</b> MySQL, Apache, phpMyAdmin, XAMPP, MongoDB, MongoDB Compass </li>
+                                            <li><b>Databases and Servers:</b> MySQL, phpMyAdmin, XAMPP, MongoDB, MongoDB Compass </li>
                                         </ul>
                                     </p>
                                 </div>

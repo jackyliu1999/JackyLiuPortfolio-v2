@@ -60,6 +60,7 @@ const Archive = () => {
                                 <br /><a href="https://github.com/jackyliu1999/ChatJS"> <img src={GitLogo} alt="" /></a> <img src={infoIcon} onClick={handleshow9Show} alt="" />
                             </td>
                         </tr>
+                        <br/>
                         <tr>
                             <td >2020</td>
                             <td >COVID19 Stats Tracker</td>
@@ -68,6 +69,7 @@ const Archive = () => {
                             <br /><a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker"> <img src={GitLogo} alt="" /> </a><img src={infoIcon} onClick={handleshow3Show} alt="" />
                             </td>
                         </tr>
+                        <br/>
                         <tr>
                             <td >2020</td>
                             <td >Notes to Text Converter</td>
@@ -77,6 +79,7 @@ const Archive = () => {
                                 <img src={infoIcon} onClick={handleshow2Show} alt="" />
                             </td>
                         </tr>
+                        <br/>
                         <tr>
                             <td >2020</td>
                             <td >Bitcoin Price Notifier</td>
@@ -86,6 +89,7 @@ const Archive = () => {
                                 <img src={infoIcon} onClick={handleshow8Show} alt="" />
                             </td>
                         </tr>
+                        <br/>
                         <tr>
                             <td >2020</td>
                             <td>Desktop Cleaner</td>

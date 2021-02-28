@@ -158,9 +158,10 @@ const Home = () => {
                             <br /><br />
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
-                                <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
-                                <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
                                 <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
                                 <br />
                                 <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
                                 <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
@@ -174,12 +175,42 @@ const Home = () => {
                             <br /><br />
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
-                                <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
-                                <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
                                 <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
                                 <br />
                                 <a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
                                 <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Decoy</h3>
+                            <img class="fit" src={Decoy} onClick={handleshow1Show} alt="" />
+                            <p>Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>ChowDown!</h3>
+                            <img class="fit" src={Chowdown} onClick={handleShow} alt="" />
+                            <p>Mobile application that allows the user to search for restaurants and recipes via image recognition or keyword search as well as acquiring recipes from a list of specified ingredients.
+                            <br /><br />
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+                                <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br />
+                                <a href="https://github.com/jackyliu1999/Chowdown" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
                         </div>
                     </li>
                     <li class="list-item">
@@ -208,33 +239,6 @@ const Home = () => {
                     </li>
                     <li class="list-item">
                         <div class="list-content">
-                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Decoy</h3>
-                            <img class="fit" src={Decoy} onClick={handleshow1Show} alt="" />
-                            <p>Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage.
-                            <br /><br />
-                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
-                                <br />
-                                <a href="https://github.com/jackyliu1999/Decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
-                                <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <div class="list-content">
-                            <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>ChowDown!</h3>
-                            <img class="fit" src={Chowdown} onClick={handleShow} alt="" />
-                            <p>Mobile application that allows the user to search for restaurants and recipes via image recognition or keyword search as well as acquiring recipes from a list of specified ingredients.
-                            <br /><br />
-                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
-                                <img src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
-                                <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
-                                <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge"></img>
-                                <br />
-                                <a href="https://github.com/jackyliu1999/Chowdown" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
-                                <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>Space War</h3>
                             <img class="fit" src={SpaceWar} onClick={handleshow12Show} alt="" />
                             <p>Final Project for CS3307, achieving 94%. Space War is a 2D space shooter game developed in C++ using the SFML library.
@@ -259,18 +263,16 @@ const Home = () => {
                         <div style={{ textAlign: "center", fontSize: "70px", color: "white", wordWrap:"break-word" }}><p>
                         <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
                         <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-                        <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
-                        <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+                        <img alt="HTML5" src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+                        <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
                         <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
                         <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
-                        <img alt="C" src="https://img.shields.io/badge/c%20-%2300599C.svg?&style=for-the-badge&logo=c&logoColor=white"/>
-                        <img alt="C#" src="https://img.shields.io/badge/c%23%20-%23239120.svg?&style=for-the-badge&logo=c-sharp&logoColor=white"/>
                         <br/>
                         <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>
                         <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
                         <img alt="React Native" src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
                         <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>
-                        <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
+                        <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23404d59.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
                         <br/>
                         <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
                         <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>

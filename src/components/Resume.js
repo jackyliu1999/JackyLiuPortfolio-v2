@@ -40,6 +40,7 @@ const Resume = () => {
                                 </div>
                             </div>
 
+
                             <div class="col-lg-6">
                                 <h3 class="resume-title">Skills</h3>
                                 <div class="resume-item">

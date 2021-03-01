@@ -28,18 +28,45 @@ import BitcoinPrice1 from './images/BitcoinPrice1.PNG'
 import BitcoinPrice2 from './images/BitcoinPrice2.PNG'
 import LoLProfileCustomizer from './images/LoLProfileCustomizer.png'
 import resumeIcon from './images/resumeIcon.png'
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
-import { Navbar, Form, FormControl, Table, Tab, Tabs } from 'react-bootstrap'
-import { TabContent, TabPane, Container, Row, Col, CardHeader, CardBody, Nav, NavItem, NavLink, Card } from "reactstrap";
+// import { Navbar, Form, FormControl, Table, Tab, Tabs } from 'react-bootstrap'
+// import { TabContent, TabPane, Container, Row, Col, CardHeader, CardBody, Nav, NavItem, NavLink, Card } from "reactstrap";
 import Card2 from 'react-bootstrap/Card'
 import infoIcon from './images/infoIcon2.png'
 import GitLogo from './images/gitLogo2.png'
 import SpaceWar from './images/SpaceWar.png'
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import CameraIcon from '@material-ui/icons/PhotoCamera';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 import classnames from "classnames";
 
+import withStyles from "@material-ui/core/styles/withStyles"
 
-const Home = () => {
+const styles = {
+    card: {
+        margin: 16,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between"
+    }
+};
+
+
+const Home = (props) => {
+    const { classes } = props
+
     const [iconTabs, setIconsTabs] = React.useState(1);
     const [textTabs, setTextTabs] = React.useState(4);
     const [show, setShow] = React.useState(false);
@@ -147,9 +174,135 @@ const Home = () => {
                     <br />
                 </div>
 
+                <Container maxWidth="lg" justify="center">
+                    <Grid container justify="center">
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card}>
+                            <CardMedia component="img" src={MyMovieCatalog} title="Image title" onClick={handleshow11Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">MyMovieCatalog</Typography>
+                                <Typography component="p">Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
 
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={Chowdown} onClick={handleShow} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">ChowDown!</Typography>
+                                <Typography component="p">Mobile application that allows the user to search for restaurants and recipes via image recognition or keyword search as well as acquiring recipes from a list of specified ingredients.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Chowdown" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleShow} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
 
-                <ul class="list">
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={Decoy} onClick={handleshow1Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">Decoy</Typography>
+                                <Typography component="p">Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br /><br /><br /><br />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow1Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={musicCatalyst} onClick={handleshow5Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">Music Catalyst</Typography>
+                                <Typography component="p">Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+                                <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={SpaceWar} onClick={handleshow12Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">Space War</Typography>
+                                <Typography component="p">Final Project for CS3307, achieving 94%. Space War is a 2D space shooter game developed in C++ using the SFML library.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&logo=c%2B%2B&ogoColor=white&style=for-the-badge"></img>
+                                <br /><br /><br /><br />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Space-War" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow12Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={LoLProfileCustomizer} onClick={handleshow10Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">LoL Profile Customizer</Typography>
+                                <Typography component="p">Python Application that allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br /><br /><br /><br />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card}>
+                            <CardMedia component="img" src={RuneterraBot} onClick={handleshow4Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">Runeterra Bot</Typography>
+                                <Typography component="p">Discord Bot, developed in Java that allows League of Legends players to look up live game stats, ranked information and summoner information through the Discord application.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"></img>
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Runeterra-Bot" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow4Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+                    </Grid>
+                </Container>
+
+                {/* <ul class="list">
                     <li class="list-item">
                         <div class="list-content">
                             <h3 style={{ textAlign: "center", fontFamily: "Arial" }}>MyMovieCatalog</h3>
@@ -159,9 +312,9 @@ const Home = () => {
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
                                 <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
-                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
                                 <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
-                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
                                 <br />
                                 <a href="https://github.com/jackyliu1999/MyMovieCatalog" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
                                 <img src={infoIcon} onClick={handleshow11Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
@@ -176,9 +329,9 @@ const Home = () => {
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
                                 <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
-                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
                                 <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
-                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
                                 <br />
                                 <a href="https://github.com/jackyliu1999/Music-Catalyst" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
                                 <img src={infoIcon} onClick={handleshow5Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
@@ -205,8 +358,8 @@ const Home = () => {
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
                                 <img src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
                                 <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
-                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-                                <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+                                <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white" />
                                 <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
                                 <br />
                                 <a href="https://github.com/jackyliu1999/Chowdown" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
@@ -249,7 +402,7 @@ const Home = () => {
                                 <img src={infoIcon} onClick={handleshow12Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} /></p>
                         </div>
                     </li>
-                </ul>
+                </ul> */}
                 <div id="skills">&nbsp;</div>
                 <div className="" id="sk" style={{ marginTop: "50px" }}>
                     <div className="skills">
@@ -260,23 +413,23 @@ const Home = () => {
                                 </div>
                             </div>
                         </section>
-                        <div style={{ textAlign: "center", fontSize: "70px", color: "white", wordWrap:"break-word" }}><p>
-                        <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
-                        <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-                        <img alt="HTML5" src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
-                        <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-                        <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
-                        <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
-                        <br/>
-                        <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>
-                        <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-                        <img alt="React Native" src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-                        <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>
-                        <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23404d59.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
-                        <br/>
-                        <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-                        <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>
-                        <img alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
+                        <div style={{ textAlign: "center", fontSize: "70px", color: "white", wordWrap: "break-word" }}><p>
+                            <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" />
+                            <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+                            <img alt="HTML5" src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
+                            <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+                            <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white" />
+                            <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white" />
+                            <br />
+                            <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge" />
+                            <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                            <img alt="React Native" src="https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                            <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white" />
+                            <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23404d59.svg?&style=for-the-badge&logo=flask&logoColor=white" />
+                            <br />
+                            <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+                            <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white" />
+                            <img alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white" />
                         </p></div>
                         <br />
                         <br />
@@ -639,8 +792,8 @@ const Home = () => {
                     </Modal.Footer>
                 </Modal>
             </div>
-        </div>
+        </div >
     )
 }
 
-export default Home;
+export default withStyles(styles)(Home)

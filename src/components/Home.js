@@ -200,7 +200,7 @@ const Home = (props) => {
                             <CardMedia component="img" src={Chowdown} onClick={handleShow} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">ChowDown!</Typography>
-                                <Typography component="p">Mobile application that allows the user to search for restaurants and recipes via image recognition or keyword search as well as acquiring recipes from a list of specified ingredients.</Typography>
+                                <Typography component="p">Mobile application that allows the user to search for restaurants and recipes via image recognition or keyword search as well as acquiring recipes from a list of specified ingredients. Created for the Hackathon: Hack Western 6.</Typography>
                             </CardContent>
                             <CardContent>
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
@@ -220,11 +220,11 @@ const Home = (props) => {
                             <CardMedia component="img" src={Decoy} onClick={handleshow1Show} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">Decoy</Typography>
-                                <Typography component="p">Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage.</Typography>
+                                <Typography component="p">Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage. Created for the Hackathon: Hack for the People, winning the "Best Digital Privacy Hack" Award.</Typography>
                             </CardContent>
                             <CardContent>
                                 <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
-                                <br /><br /><br /><br />
+                                <br />
                             </CardContent>
                             <CardActions>
                                 <a href="https://github.com/jackyliu1999/Decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>

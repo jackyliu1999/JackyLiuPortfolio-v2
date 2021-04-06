@@ -27,6 +27,7 @@ import desktopCleaner2 from './images/desktopCleaner2.PNG'
 import BitcoinPrice1 from './images/BitcoinPrice1.PNG'
 import BitcoinPrice2 from './images/BitcoinPrice2.PNG'
 import LoLProfileCustomizer from './images/LoLProfileCustomizer.png'
+import Crimson from './images/Crimson.png'
 import resumeIcon from './images/resumeIcon.png'
 import { Modal } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
@@ -36,21 +37,14 @@ import Card2 from 'react-bootstrap/Card'
 import infoIcon from './images/infoIcon2.png'
 import GitLogo from './images/gitLogo2.png'
 import SpaceWar from './images/SpaceWar.png'
-import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
-import classnames from "classnames";
 
 import withStyles from "@material-ui/core/styles/withStyles"
 
@@ -180,7 +174,7 @@ const Home = (props) => {
                             <CardMedia component="img" src={MyMovieCatalog} title="Image title" onClick={handleshow11Show} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">MyMovieCatalog</Typography>
-                                <Typography component="p">Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword.</Typography>
+                                <Typography component="p">Web application that allows registered users to track their watched movies, view the lists of other users and search movies based on a keyword. <br /><br /><br /></Typography>
                             </CardContent>
                             <CardContent>
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
@@ -220,11 +214,11 @@ const Home = (props) => {
                             <CardMedia component="img" src={Decoy} onClick={handleshow1Show} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">Decoy</Typography>
-                                <Typography component="p">Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage. Created for the Hackathon: Hack for the People, winning the "Best Digital Privacy Hack" Award.</Typography>
+                                <Typography component="p">Security-focused application, developed in Python that was created to mitigate damages caused by laptop and computer theft by tracking unauthorized usage. Created for the Hackathon: Hack for the People, winning the "Best Digital Privacy Hack" Award. <br /><br /><br /></Typography>
                             </CardContent>
                             <CardContent>
                                 <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
-                                <br />
+
                             </CardContent>
                             <CardActions>
                                 <a href="https://github.com/jackyliu1999/Decoy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
@@ -233,10 +227,26 @@ const Home = (props) => {
                         </Grid>
 
                         <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={Crimson} onClick={handleshow10Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">Crimson</Typography>
+                                <Typography component="p">Gacha-based RPG game developed in Python, featuring a loot system, battle system, character animations inventory and shop. Players are able to advance by battling enemy entities in order to enhance their characters.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
+                                <br /><br /><br /><br />
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Crimson" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
                             <CardMedia component="img" src={musicCatalyst} onClick={handleshow5Show} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">Music Catalyst</Typography>
-                                <Typography component="p">Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server.</Typography>
+                                <Typography component="p">Web application that allows users to save their favorite songs to a playlist, featuring a login and registation server. Stores favorited songs (Title, Youtube embedded URL, lyrics) in a MySQL database while allowing users to clear playlists with ease.<br /></Typography>
                             </CardContent>
                             <CardContent>
                                 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
@@ -256,7 +266,7 @@ const Home = (props) => {
                             <CardMedia component="img" src={SpaceWar} onClick={handleshow12Show} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">Space War</Typography>
-                                <Typography component="p">Final Project for CS3307, achieving 94%. Space War is a 2D space shooter game developed in C++ using the SFML library.</Typography>
+                                <Typography component="p">Developed as the final project for CS3307: Object-Oriented Design and Analysis, achieving 94%. Space War is a 2D space shooter game developed in C++ using the SFML library.<br /><br /><br /></Typography>
                             </CardContent>
                             <CardContent>
                                 <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&logo=c%2B%2B&ogoColor=white&style=for-the-badge"></img>
@@ -265,22 +275,6 @@ const Home = (props) => {
                             <CardActions>
                                 <a href="https://github.com/jackyliu1999/Space-War" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
                                 <img src={infoIcon} onClick={handleshow12Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
-                            </CardActions>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
-                            <CardMedia component="img" src={LoLProfileCustomizer} onClick={handleshow10Show} />
-                            <CardContent>
-                                <Typography variant="h5" component="h2">LoL Profile Customizer</Typography>
-                                <Typography component="p">Python Application that allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.</Typography>
-                            </CardContent>
-                            <CardContent>
-                                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"></img>
-                                <br /><br /><br /><br />
-                            </CardContent>
-                            <CardActions>
-                                <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
-                                <img src={infoIcon} onClick={handleshow10Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
                             </CardActions>
                         </Grid>
 
@@ -584,23 +578,23 @@ const Home = (props) => {
 
                 <Modal size="lg" show={show10} onHide={handleshow10Close}>
                     <Modal.Header closeButton>
-                        <Modal.Title>LoL Profile Customizer</Modal.Title>
+                        <Modal.Title>Crimson</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/LoLProfileCustomizer" >github.com/jackyliu1999/LoLProfileCustomizer</a></b><br />
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Crimson" >github.com/jackyliu1999/Crimson</a></b><br />
                         <b>Video Demo: </b><br />
                         <center><div class="video-container"><iframe width="700" height="500"
-                            src="https://www.youtube.com/embed/w17E0kt0C9g">
+                            src="https://www.youtube.com/embed/4XL9XZ7TZZ4">
                         </iframe></div></center>
                         <b>Dependencies: </b><br />
-                        <li>lcu-driver</li>
-                        <b>What it does and how it was built: </b><br />
-          Lol Profile Customizer allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.
-          <br /><b>Functionalities: </b><br />
-                        <li>Change Summoner Icon to any owned Summoner Icon</li>
-                        <li>Change client-sided Summoner Icon to any Summoner Icon in the game, other uses will be able to see this change in their client</li>
-                        <li>Change Summoner profile background to any skin in the game, based on Skin ID</li>
-                        <li>Change displayed Summoner chat rank</li>
+                        <li>pygame</li>
+                        <li>pygame-menu</li>
+                        <li>pyperclip</li>
+                        <li>typing-extensions</li>
+                        <b>Features: </b><br />
+                        <li>The battle system, Inventory system, Loot system, Shop system, Character animations, Summoning heroes, Banners, Resetting the game, Demo version</li>
+                        <b>Gameplay: </b><br />
+          The player’s primary goal is to quote on quote “collect” characters. They have the ability to shop for items for characters based on drops from monsters. You start the game by giving a name to your protagonist. You can go to battle by clicking on "Fight in Battle" in the main menu. There is two regions. Camelot region is harder than Mount Olympus region. Camelot region should be locked in the beginning and it is unlocked after beating Mount Olympus' boss monster. Since this is a demo, Camelot region is unlocked to begin with. There is an unique regular monster and an unique boss monster for each region. The chance to encounter a boss monster is 25%. At the beginning, the player can not defeat the boss monster, so they must run away if encountered one. They must defeat regular monsters first to buy upgrades, items, and unlock new characters. After defeating a regular monster, the player gains gold and shards. In the shop, the player can use gold to buy healing potions, power ups, and upgrades to a hero's stats. All upgrades are only given to the currently selected hero. Player can switch their main hero by clicking on "View Heroes" in the main menu. The player can use shards to unlock new characters in the Summoning Portal. Summoning Portal summons new hero based on the banner the player have selected. The banner also gives the player bonus stats. Player can switch their banner by clicking on "Change Banner" in the main menu. As for the combat, player can only use their selected hero in a fight. The player can see a hero character, an enemy character, hero's health, enemy's health, combat items, and four buttons on the screen during combat. All characters are animated and there is seven characters in total. There is three heroes, two regular monsters, and two boss monsters. All characters have both an idle animation and an attack animation. In combat, both the attack button and the run button are self explanatory. The player can click on the power button to use power up. The player can click on the heal button to use healing potion. There is a demo mode that adds a lot of gold and shards for the user to test the game.
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleshow10Close}>

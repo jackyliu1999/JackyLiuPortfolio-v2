@@ -14,26 +14,14 @@ import ChowDownDemo5 from './images/Chowdown5.jpg'
 import Decoy2 from './images/Decoy2.jpg'
 import Decoy3 from './images/Decoy3.jpg'
 import Decoy4 from './images/Decoy4.jpg'
-import NotesToText1 from './images/NotesToText1.PNG'
-import NotesToText2 from './images/NotesToText2.PNG'
-import cverseCommands from './images/cverseCommands.PNG'
-import cversestatsCanada from './images/cversestatsCanada.PNG'
-import cverseReddit from './images/cverseReddit.PNG'
-import cverseNews from './images/cverseNews.PNG'
 import runeterrabot1 from './images/runeterrabot1.JPG'
 import runeterrabot2 from './images/runeterrabot2.JPG'
 import runeterrabot3 from './images/runeterrabot3.JPG'
-import desktopCleaner2 from './images/desktopCleaner2.PNG'
-import BitcoinPrice1 from './images/BitcoinPrice1.PNG'
-import BitcoinPrice2 from './images/BitcoinPrice2.PNG'
-import LoLProfileCustomizer from './images/LoLProfileCustomizer.png'
+import Remedy1 from './images/Remedy1.png'
 import Crimson from './images/Crimson.png'
 import resumeIcon from './images/resumeIcon.png'
 import { Modal } from 'react-bootstrap';
 import MyMovieCatalog from './images/MyMovieCatalog.png'
-// import { Navbar, Form, FormControl, Table, Tab, Tabs } from 'react-bootstrap'
-// import { TabContent, TabPane, Container, Row, Col, CardHeader, CardBody, Nav, NavItem, NavLink, Card } from "reactstrap";
-import Card2 from 'react-bootstrap/Card'
 import infoIcon from './images/infoIcon2.png'
 import GitLogo from './images/gitLogo2.png'
 import SpaceWar from './images/SpaceWar.png'
@@ -227,6 +215,28 @@ const Home = (props) => {
                         </Grid>
 
                         <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
+                            <CardMedia component="img" src={Remedy1} onClick={handleshow6Show} />
+                            <CardContent>
+                                <Typography variant="h5" component="h2">Remedy</Typography>
+                                <Typography component="p">Full stack web application developed in React with a Node.js back end connecting with a MySQL database on Google Cloud. Connects healthcare providers with healthcare seekers, allowing organizations to provide dynamic information to individuals.</Typography>
+                            </CardContent>
+                            <CardContent>
+                                <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+                                <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+                                <img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"></img>
+                                <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+                                <img alt="CSS3" src="https://img.shields.io/badge/css%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+                                <img alt="MySQL" src="https://img.shields.io/badge/mysql-%231572B6.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+                                <img alt="Google Cloud" src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white"/>
+                            </CardContent>
+                            <CardActions>
+                                <a href="https://github.com/jackyliu1999/Remedy" style={{ marginTop: "20px", float: "left" }}> <img src={GitLogo} alt="" /></a>
+                                <img src={infoIcon} onClick={handleshow6Show} alt="" style={{ marginTop: "20px", float: "left", marginLeft: "10px" }} />
+                            </CardActions>
+                        </Grid>
+
+
+                        <Grid item xs={12} sm={6} md={3} component={Card} className={classes.card} justify="center">
                             <CardMedia component="img" src={Crimson} onClick={handleshow10Show} />
                             <CardContent>
                                 <Typography variant="h5" component="h2">Crimson</Typography>
@@ -342,13 +352,6 @@ const Home = (props) => {
 
 
 
-
-
-
-
-
-
-
                 <Modal size="lg" show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>ChowDown! - Hack Western 6</Modal.Title>
@@ -400,64 +403,6 @@ const Home = (props) => {
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleshow1Close}>
-                            Close
-          </Button>
-                    </Modal.Footer>
-                </Modal>
-
-                <Modal size="lg" show={show2} onHide={handleshow2Close}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Notes to Text Converter</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Notes-to-Text-Converter">github.com/jackyliu1999/Notes-to-Text-Converter</a></b><br />
-        Notes to Text Converter is a program that takes handwritten notes and converts them into text. The program aims to give students the option to be able to take handwritten notes in class and have the ability to transfer them to their computer at a later time. Notes to Text Converter
- incorporates optical character recognition tool, Python-tesseract also known as pytesseract for the conversion functionality. Tkinter was utilized in order to provide a user-friendly interface.
-        <br /><b>Programming Languages:</b><br />
-                        <li>Python</li>
-                        <b>Libraries Imported:</b><br />
-                        <li>pytesseract </li>
-                        <li>Tkinter </li>
-                        <li>PIL </li>
-                        <b>How to use:</b><br />
-                        <li>1. Take a picture of your handwritten notes</li>
-                        <li>2. Open command prompt and change directory to folder containing the program</li>
-                        <li>3. Type "python imgToText.py"</li>
-                        <li>4. Click Browse File</li>
-                        <img class="img-fluid" src={NotesToText1} alt="" />
-                        <li>5. Choose image containing handwritten notes</li>
-                        <li>6. Choose a name for the new file containing the converted notes</li>
-                        <img class="img-fluid" src={NotesToText2} alt="" />
-                        <li>7. File containing the converted notes will be located in the same directory as the program</li>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={handleshow2Close}>
-                            Close
-          </Button>
-                    </Modal.Footer>
-                </Modal>
-
-                <Modal size="lg" show={show3} onHide={handleshow3Close}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>COVID19 Stats Tracker - BOTHACKS</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/COVID19-Stats-Tracker" >github.com/jackyliu1999/COVID19-Stats-Tracker</a></b><br />
-                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a style={{ color: "blue" }} href="https://github.com/ansonwong250" >Anson Wong</a><br />
-                        <b>Inspiration:</b><br />
-        COVID-19 is a worldwide pandemic that was first identified in late 2019 in Wuhan, China. As of August 2020, more than 20 million cases resulting in over 800,000 deaths have been documented worldwide. Information regarding the coronavirus is scattered and countless individuals have found it exceedingly difficult to scavenge for information while balancing their readjusted life due to the pandemic. COVID19 Stats Tracker acts as a haven of live information regarding the virus, incorporating various pandemic-related APIs as well as voice activated commands.
-        <br /> <b>What it does:</b><br />
-        COVID19 Stats Tracker incorporates APIs that draw live data including total cases, total recovered and total deaths in order to inform the user of the severity and numbers of the COVID-19 pandemic. Furthermore, the user is able to filter results in accordance to their own country. COVID19 Stats Tracker also features commands that links the user to pandemic-related resources. Due to the fact that social media and the news are ingrained into the lives of our society, COVID19 Stats Tracker displays the most recent news articles and Reddit posts regarding COVID-19. Lastly, all of commands are activated via voice recognition, allowing easy access for each and every individual.
-        <img class="img-fluid" src={cverseCommands.PNG} alt="" />
-                        <br /> <b>How it was built:</b><br />
-          COVID19 Stats Tracker was built using Python incorporating the libraries: requests, Tkinter, datetime, webbrowser, newsapi, speech_recognition and pyttsx3. The requests module was utilized in order to web scrape data for live stats of the pandemic. Datetime was used to display the current time while the webbrowser library was used to open links to COVID-19 resources. The newsapi library was used to fetch the top pandemic-related news articles. Lastly, in conjunction with all the commands, speech_recognition allows the user to activate commands via voice while pyttsx3 reads out prompts.
-        <br /> <b>Demo: </b> <br />
-                        <img class="img-fluid" src={cversestatsCanada} alt="" />
-                        <img class="img-fluid" src={cverseReddit} alt="" />
-                        <img class="img-fluid" src={cverseNews} alt="" />
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={handleshow3Close}>
                             Close
           </Button>
                     </Modal.Footer>
@@ -528,54 +473,6 @@ const Home = (props) => {
                     </Modal.Footer>
                 </Modal>
 
-                <Modal size="lg" show={show7} onHide={handleshow7Close}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Desktop Cleaner</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body><b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Desktop-Cleaner" >github.com/jackyliu1999/Desktop-Cleaner</a></b><br />
-                        <b>Functionality:</b><br />
-        Desktop cleaner is a Python-based automation script that sorts folders based on file type (images, documents, spreadsheets, installers, music, videos) into a user inputted directory.
-        <br /><b>Libraries Imported: </b><br />
-                        <li>os</li>
-                        <li>sys</li>
-                        <li>shutil</li>
-                        <br /><b>Demo: </b><br />
-                        <img class="img-fluid" src={desktopCleaner2} alt="" /><br />
-                        <li>Input file type to sort</li>
-                        <li>Input Starting Directory</li>
-                        <li>Input Destination Directory</li>
-                        <li>Desktop Cleaner then moves all files of inputted type into the destination directory and creates a new folder to store thecollection of files</li>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={handleshow7Close}>
-                            Close
-          </Button>
-                    </Modal.Footer>
-                </Modal>
-
-                <Modal size="lg" show={show8} onHide={handleshow8Close}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Bitcoin Price Notifier</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body><b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Bitcoin-Price-Notifier" >github.com/jackyliu1999/Bitcoin-Price-Notifier</a></b><br />
-                        <b>Functionality:</b><br />
-        Notifies users of Bitcoin price fluctuation by extracting the live price of Bitcoin from Yahoo Finance. Allows users to set a benchmark and once the price hits the designated benchmark, verbally notifies user.
-        <br /><b>Libraries Imported: </b><br />
-                        <li>Selenium</li>
-                        <li>pyttsx3</li>
-                        <br /><b>Demo: </b><br />
-                        <img class="img-fluid" src={BitcoinPrice1} alt="" /><br />
-        Users are able to input a pricing benchmark and whether to be notified once price is higher or lower than the designated benchmark. Users are also able to display current prices to the terminal.
-        <img class="img-fluid" src={BitcoinPrice2} alt="" /><br />
-        Once benchmark is hit, notifies the user verbally using the pyttsx3 library.
-        </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={handleshow8Close}>
-                            Close
-          </Button>
-                    </Modal.Footer>
-                </Modal>
-
                 <Modal size="lg" show={show10} onHide={handleshow10Close}>
                     <Modal.Header closeButton>
                         <Modal.Title>Crimson</Modal.Title>
@@ -598,6 +495,30 @@ const Home = (props) => {
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleshow10Close}>
+                            Close
+          </Button>
+                    </Modal.Footer>
+                </Modal>
+
+                <Modal size="lg" show={show6} onHide={handleshow6Close}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Remedy - Created for RU Hacks 2021</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <b>GitHub: <a style={{ color: "blue" }} href="https://github.com/jackyliu1999/Remedy" >github.com/jackyliu1999/Remedy</a></b><br />
+                        <b>Video Demo: </b><br />
+                        <center><div class="video-container"><iframe width="700" height="500"
+                            src="https://www.youtube.com/embed/lcAF4CB1APA">
+                        </iframe></div></center>
+                        <b>What it does and how it works: </b><br />
+                        <li>Remedy is a full stack application developed in React with a Node.js back end connecting with a MySQL database on Google Cloud. Remedy connects the healthcare industry with those looking for healthcare, giving healthcare organizations the ability to update their information that is displayed on the Google Map should a situation arises that makes it necessary. For example, a hospital could indictate whether COVID-19 vaccines are available at their location or not.</li>
+                        <b>Dependencies: </b><br />
+                        <li>Front end: bootstrap, mobx, mobx-react, react-bootstrap, react-dom, react-router-dom, reactstrap, web-vitals, google-maps-react</li>
+                        <li>Back end: bcrypt, express, express-mysql-session, express-session, mysql</li>
+                        <b>Collaborated with:</b> <a style={{ color: "blue" }} href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a style={{ color: "blue" }} href="https://github.com/ansonwong250" >Anson Wong</a><br />
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleshow6Close}>
                             Close
           </Button>
                     </Modal.Footer>
